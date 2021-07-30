@@ -64,8 +64,6 @@
 						<section class="tsd-index-section ">
 							<h3>Entities Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="index.html#getDoors" class="tsd-kind-icon">get<wbr>Doors</a></li>
-								<li class="tsd-kind-function"><a href="index.html#getGridEntities" class="tsd-kind-icon">get<wbr>Grid<wbr>Entities</a></li>
 								<li class="tsd-kind-function"><a href="index.html#getRoomNPCs" class="tsd-kind-icon">get<wbr>RoomNPCs</a></li>
 							</ul>
 							<h3>Flags Functions</h3>
@@ -73,6 +71,12 @@
 								<li class="tsd-kind-function"><a href="index.html#addFlag" class="tsd-kind-icon">add<wbr>Flag</a></li>
 								<li class="tsd-kind-function"><a href="index.html#hasFlag" class="tsd-kind-icon">has<wbr>Flag</a></li>
 								<li class="tsd-kind-function"><a href="index.html#removeFlag" class="tsd-kind-icon">remove<wbr>Flag</a></li>
+							</ul>
+							<h3>Grid Entities Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="index.html#getDoors" class="tsd-kind-icon">get<wbr>Doors</a></li>
+								<li class="tsd-kind-function"><a href="index.html#getGridEntities" class="tsd-kind-icon">get<wbr>Grid<wbr>Entities</a></li>
+								<li class="tsd-kind-function"><a href="index.html#openAllDoors" class="tsd-kind-icon">open<wbr>All<wbr>Doors</a></li>
 							</ul>
 							<h3>Input Functions</h3>
 							<ul class="tsd-index-list">
@@ -96,6 +100,7 @@
 								<li class="tsd-kind-function"><a href="index.html#anyPlayerIs" class="tsd-kind-icon">any<wbr>Player<wbr>Is</a></li>
 								<li class="tsd-kind-function"><a href="index.html#getOpenTrinketSlot" class="tsd-kind-icon">get<wbr>Open<wbr>Trinket<wbr>Slot</a></li>
 								<li class="tsd-kind-function"><a href="index.html#getPlayers" class="tsd-kind-icon">get<wbr>Players</a></li>
+								<li class="tsd-kind-function"><a href="index.html#getTotalPlayerCollectibles" class="tsd-kind-icon">get<wbr>Total<wbr>Player<wbr>Collectibles</a></li>
 							</ul>
 							<h3>Tears Functions</h3>
 							<ul class="tsd-index-list">
@@ -113,7 +118,11 @@
 								<li class="tsd-kind-function"><a href="index.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a></li>
 								<li class="tsd-kind-function"><a href="index.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a></li>
 								<li class="tsd-kind-function"><a href="index.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a></li>
+								<li class="tsd-kind-function"><a href="index.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a></li>
+								<li class="tsd-kind-function"><a href="index.html#inCrawlspace" class="tsd-kind-icon">in<wbr>Crawlspace</a></li>
 								<li class="tsd-kind-function"><a href="index.html#initRNG" class="tsd-kind-icon">initRNG</a></li>
+								<li class="tsd-kind-function"><a href="index.html#isAntibirthStage" class="tsd-kind-icon">is<wbr>Antibirth<wbr>Stage</a></li>
+								<li class="tsd-kind-function"><a href="index.html#onSetSeed" class="tsd-kind-icon">on<wbr>Set<wbr>Seed</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,40 +130,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Entities Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="getDoors" class="tsd-anchor"></a>
-					<h3>get<wbr>Doors</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Doors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/entities.ts#L7">entities.ts:7</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="getGridEntities" class="tsd-anchor"></a>
-					<h3>get<wbr>Grid<wbr>Entities</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Grid<wbr>Entities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GridEntity</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/entities.ts#L24">entities.ts:24</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntity</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="getRoomNPCs" class="tsd-anchor"></a>
 					<h3>get<wbr>RoomNPCs</h3>
@@ -165,7 +140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/entities.ts#L52">entities.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/entities.ts#L15">entities.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -197,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/flags.ts#L16">flags.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/flags.ts#L16">flags.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,7 +215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/flags.ts#L36">flags.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/flags.ts#L36">flags.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -284,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/flags.ts#L55">flags.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/flags.ts#L55">flags.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,6 +294,60 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Grid Entities Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getDoors" class="tsd-anchor"></a>
+					<h3>get<wbr>Doors</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Doors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/gridEntities.ts#L7">gridEntities.ts:7</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getGridEntities" class="tsd-anchor"></a>
+					<h3>get<wbr>Grid<wbr>Entities</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Grid<wbr>Entities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GridEntity</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/gridEntities.ts#L24">gridEntities.ts:24</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntity</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="openAllDoors" class="tsd-anchor"></a>
+					<h3>open<wbr>All<wbr>Doors</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>All<wbr>Doors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/gridEntities.ts#L41">gridEntities.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Input Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="isActionPressedOnAnyInput" class="tsd-anchor"></a>
@@ -330,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/input.ts#L8">input.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/input.ts#L8">input.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,7 +387,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/input.ts#L24">input.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/input.ts#L24">input.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -390,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/log.ts#L14">log.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/log.ts#L14">log.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/log.ts#L23">log.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/log.ts#L23">log.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/log.ts#L32">log.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/log.ts#L32">log.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -474,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/log.ts#L41">log.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/log.ts#L41">log.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,7 +534,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/log.ts#L55">log.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/log.ts#L55">log.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -533,7 +562,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/log.ts#L64">log.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/log.ts#L64">log.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -564,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/player.ts#L7">player.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L7">player.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -590,7 +619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/player.ts#L20">player.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L20">player.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -613,7 +642,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/player.ts#L35">player.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L35">player.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -636,7 +665,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/player.ts#L48">player.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L48">player.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -659,7 +688,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/player.ts#L74">player.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L74">player.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -695,7 +724,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/player.ts#L102">player.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L102">player.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -718,6 +747,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getTotalPlayerCollectibles" class="tsd-anchor"></a>
+					<h3>get<wbr>Total<wbr>Player<wbr>Collectibles</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Player<wbr>Collectibles<span class="tsd-signature-symbol">(</span>collectibleType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/player.ts#L126">player.ts:126</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the total number of collectibles amongst all players. For example, if player 1 has 1 Sad
+									Onion and player 2 has 2 Sad Onions, then this function would return 3.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>collectibleType: <span class="tsd-signature-type">CollectibleType</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Tears Functions</h2>
@@ -731,7 +789,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/tears.ts#L8">tears.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/tears.ts#L8">tears.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -761,7 +819,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/tears.ts#L19">tears.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/tears.ts#L19">tears.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -794,7 +852,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/ui.ts#L14">ui.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/ui.ts#L14">ui.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -822,7 +880,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/ui.ts#L58">ui.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/ui.ts#L58">ui.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -851,7 +909,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/util.ts#L9">util.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L9">util.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -888,7 +946,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/util.ts#L30">util.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L30">util.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -918,7 +976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/util.ts#L77">util.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L77">util.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -976,7 +1034,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/util.ts#L87">util.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L87">util.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -992,6 +1050,62 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="gridToPos" class="tsd-anchor"></a>
+					<h3>grid<wbr>ToPos</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">grid<wbr>ToPos<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L105">util.ts:105</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts a room X and Y coordinate to a position. For example, the coordinates of 0, 0 are
+									equal to <code>Vector(80, 160)</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">int</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">int</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="inCrawlspace" class="tsd-anchor"></a>
+					<h3>in<wbr>Crawlspace</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">in<wbr>Crawlspace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L123">util.ts:123</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function for determining whether the current room is a crawlspace. Use this function over
+										comparing to <code>GridRooms.ROOM_DUNGEON_IDX</code> directly since there is a special case of the player
+									being in The Beast room.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="initRNG" class="tsd-anchor"></a>
 					<h3>initRNG</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -1001,7 +1115,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4377ddc/src/util.ts#L114">util.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L151">util.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1026,6 +1140,47 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RNG</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="isAntibirthStage" class="tsd-anchor"></a>
+					<h3>is<wbr>Antibirth<wbr>Stage</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Antibirth<wbr>Stage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L163">util.ts:163</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="onSetSeed" class="tsd-anchor"></a>
+					<h3>on<wbr>Set<wbr>Seed</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Set<wbr>Seed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/54c490d/src/util.ts#L180">util.ts:180</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Whether or not the player is playing on a set seed, meaning that they entered in a specific seed
+										by pressing tab on the character selection screen. When the player resets the game on a set seed,
+									the game will not switch to a different seed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1096,7 +1251,16 @@
 						<a href="index.html#getTearsStat" class="tsd-kind-icon">get<wbr>Tears<wbr>Stat</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="index.html#getTotalPlayerCollectibles" class="tsd-kind-icon">get<wbr>Total<wbr>Player<wbr>Collectibles</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="index.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="index.html#hasFlag" class="tsd-kind-icon">has<wbr>Flag</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="index.html#inCrawlspace" class="tsd-kind-icon">in<wbr>Crawlspace</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#initRNG" class="tsd-kind-icon">initRNG</a>
@@ -1106,6 +1270,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#isActionTriggeredOnAnyInput" class="tsd-kind-icon">is<wbr>Action<wbr>Triggered<wbr>OnAny<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="index.html#isAntibirthStage" class="tsd-kind-icon">is<wbr>Antibirth<wbr>Stage</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#log" class="tsd-kind-icon">log</a>
@@ -1124,6 +1291,12 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#logAllUseFlags" class="tsd-kind-icon">log<wbr>All<wbr>Use<wbr>Flags</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="index.html#onSetSeed" class="tsd-kind-icon">on<wbr>Set<wbr>Seed</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="index.html#openAllDoors" class="tsd-kind-icon">open<wbr>All<wbr>Doors</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#removeFlag" class="tsd-kind-icon">remove<wbr>Flag</a>
