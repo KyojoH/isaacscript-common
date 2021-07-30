@@ -62,34 +62,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Custom Callbacks Enumerations</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum"><a href="enums/ModCallbacksCustom.html" class="tsd-kind-icon">Mod<wbr>Callbacks<wbr>Custom</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Classes</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-class"><a href="classes/PickingUpItem.html" class="tsd-kind-icon">Picking<wbr>UpItem</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Custom Callbacks Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface"><a href="interfaces/CallbackParametersCustom.html" class="tsd-kind-icon">Callback<wbr>Parameters<wbr>Custom</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias"><a href="index.html#PlayerIndex" class="tsd-kind-icon">Player<wbr>Index</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Custom Callbacks Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="index.html#upgradeMod" class="tsd-kind-icon">upgrade<wbr>Mod</a></li>
-							</ul>
 							<h3>Entities Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="index.html#getRoomNPCs" class="tsd-kind-icon">get<wbr>RoomNPCs</a></li>
@@ -128,7 +106,6 @@
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="index.html#getPlayerIndex" class="tsd-kind-icon">get<wbr>Player<wbr>Index</a></li>
-								<li class="tsd-kind-function"><a href="index.html#saveDataManager" class="tsd-kind-icon">save<wbr>Data<wbr>Manager</a></li>
 							</ul>
 							<h3>Player Functions</h3>
 							<ul class="tsd-index-list">
@@ -176,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">Player<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>__playerIndexBrand<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L133">functions/player.ts:133</a></li>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L133">functions/player.ts:133</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,48 +168,6 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Custom Callbacks Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="upgradeMod" class="tsd-anchor"></a>
-					<h3>upgrade<wbr>Mod</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">upgrade<wbr>Mod<span class="tsd-signature-symbol">(</span>mod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Mod</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ModUpgraded</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/upgradeMod.ts#L22">upgradeMod.ts:22</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Use this function to enable the custom callbacks provided by <code>isaacscript-common</code>.</p>
-								</div>
-								<p>Example:</p>
-								<pre><code><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">mod</span><span style="color: #000000"> = </span><span style="color: #795E26">RegisterMod</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;My Mod&quot;</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">); </span><span style="color: #008000">// &quot;mod&quot; is now type Mod</span>
-<span style="color: #001080">mod</span><span style="color: #000000"> = </span><span style="color: #795E26">upgradeMod</span><span style="color: #000000">(</span><span style="color: #001080">mod</span><span style="color: #000000">); </span><span style="color: #008000">// &quot;mod&quot; is now type ModUpgraded</span>
-
-<span style="color: #008000">// Subscribe to vanilla callbacks</span>
-<span style="color: #001080">mod</span><span style="color: #000000">.</span><span style="color: #795E26">AddCallback</span><span style="color: #000000">(</span><span style="color: #001080">ModCallbacks</span><span style="color: #000000">.</span><span style="color: #0070C1">MC_POST_UPDATE</span><span style="color: #000000">, </span><span style="color: #001080">postUpdate</span><span style="color: #000000">);</span>
-
-<span style="color: #008000">// Subscribe to custom callbacks</span>
-<span style="color: #001080">mod</span><span style="color: #000000">.</span><span style="color: #795E26">AddCallbackCustom</span><span style="color: #000000">(</span><span style="color: #001080">ModCallbacksCustom</span><span style="color: #000000">.</span><span style="color: #0070C1">MC_POST_ITEM_PICKUP</span><span style="color: #000000">, </span><span style="color: #001080">postItemPickup</span><span style="color: #000000">);</span>
-</code></pre>
-								<p>Also see the <a href="enums/ModCallbacksCustom.html"><code>ModCallbacksCustom</code></a> enum and <a href="interfaces/CallbackParametersCustom.html"><code>CallbackParametersCustom</code></a>.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>mod: <span class="tsd-signature-type">Mod</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ModUpgraded</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Entities Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="getRoomNPCs" class="tsd-anchor"></a>
@@ -244,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/entities.ts#L15">functions/entities.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/entities.ts#L15">functions/entities.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/flags.ts#L16">functions/flags.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/flags.ts#L16">functions/flags.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/flags.ts#L36">functions/flags.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/flags.ts#L36">functions/flags.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -363,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/flags.ts#L55">functions/flags.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/flags.ts#L55">functions/flags.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,7 +344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/gridEntities.ts#L7">functions/gridEntities.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/gridEntities.ts#L7">functions/gridEntities.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -426,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/gridEntities.ts#L24">functions/gridEntities.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/gridEntities.ts#L24">functions/gridEntities.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntity</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -443,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/gridEntities.ts#L41">functions/gridEntities.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/gridEntities.ts#L41">functions/gridEntities.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -463,7 +398,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/input.ts#L8">functions/input.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/input.ts#L8">functions/input.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/input.ts#L24">functions/input.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/input.ts#L24">functions/input.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,7 +458,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/log.ts#L14">functions/log.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/log.ts#L14">functions/log.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +486,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/log.ts#L23">functions/log.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/log.ts#L23">functions/log.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -579,7 +514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/log.ts#L32">functions/log.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/log.ts#L32">functions/log.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -607,7 +542,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/log.ts#L41">functions/log.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/log.ts#L41">functions/log.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -638,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/log.ts#L55">functions/log.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/log.ts#L55">functions/log.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -666,7 +601,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/log.ts#L64">functions/log.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/log.ts#L64">functions/log.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -697,7 +632,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/math.ts#L12">functions/math.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/math.ts#L12">functions/math.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -721,7 +656,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/math.ts#L4">functions/math.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/math.ts#L4">functions/math.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -747,7 +682,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L159">functions/player.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L159">functions/player.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -785,92 +720,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="saveDataManager" class="tsd-anchor"></a>
-					<h3>save<wbr>Data<wbr>Manager</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>Data<wbr>Manager<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, saveData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SaveData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/saveDataManager.ts#L73">saveDataManager.ts:73</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>This is the entry point to the save data manager, a system which provides two major features:</p>
-								</div>
-								<ol>
-									<li>automatic resetting of variables on a new run, on a new level, or on a new room (as desired)</li>
-									<li>automatic saving and loading of all tracked data to the &quot;save#.dat&quot; file</li>
-								</ol>
-								<p>The save data manager never exposes any data, ensuring that all of the files in your mod have
-								variables that are properly scoped.</p>
-								<p>Example:</p>
-								<pre><code><span style="color: #008000">// in file: feature1.ts</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">saveDataManager</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;isaacscript-common&quot;</span><span style="color: #000000">;</span>
-
-<span style="color: #008000">// Declare local variables for this file or feature</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">v</span><span style="color: #000000"> = {</span>
-<span style="color: #000000">  </span><span style="color: #008000">// These variables are never reset; manage them yourself at will</span>
-<span style="color: #000000">  </span><span style="color: #001080">persistent:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">foo1:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">,</span>
-<span style="color: #000000">  },</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">// These variables are reset at the beginning of every run</span>
-<span style="color: #000000">  </span><span style="color: #001080">run:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">foo2:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">,</span>
-<span style="color: #000000">  },</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">// These variables are reset at the beginning of every level</span>
-<span style="color: #000000">  </span><span style="color: #001080">level:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">foo3:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">,</span>
-<span style="color: #000000">  },</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">// These variables are reset at the beginning of every room</span>
-<span style="color: #000000">  </span><span style="color: #001080">room:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">foo2:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">,</span>
-<span style="color: #000000">  },</span>
-<span style="color: #000000">};</span>
-<span style="color: #008000">// (every child object is optional; only create the ones that you need)</span>
-
-<span style="color: #008000">// Register the variables with the save data manager</span>
-<span style="color: #008000">// (we need to provide a string key so that it can save the variables properly in the &quot;save#.dat&quot;</span>
-<span style="color: #008000">// file)</span>
-<span style="color: #795E26">saveDataManager</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;feature1&quot;</span><span style="color: #000000">, </span><span style="color: #001080">v</span><span style="color: #000000">);</span>
-
-<span style="color: #008000">// Elsewhere in the file, use your variables</span>
-<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">feature1Function</span><span style="color: #000000">() {</span>
-<span style="color: #000000">  </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">v</span><span style="color: #000000">.</span><span style="color: #001080">run</span><span style="color: #000000">.</span><span style="color: #001080">foo1</span><span style="color: #000000"> &gt; </span><span style="color: #098658">0</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #008000">// Do stuff</span>
-<span style="color: #000000">  }</span>
-<span style="color: #000000">}</span>
-</code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The name of the file or feature that is submitting data to be managed by the save data
-											manager. The save data manager will throw an error if it receives a second registration request
-										using the same key as a previous subscriber.</p>
-									</div>
-								</li>
-								<li>
-									<h5>saveData: <span class="tsd-signature-type">SaveData</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object with one or more child-objects of &quot;persistent&quot;, &quot;run&quot;, &quot;level&quot;, or
-										&quot;room&quot;.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Player Functions</h2>
@@ -884,7 +733,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L7">functions/player.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L7">functions/player.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -910,7 +759,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L23">functions/player.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L23">functions/player.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -933,7 +782,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L38">functions/player.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L38">functions/player.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -956,7 +805,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L51">functions/player.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L51">functions/player.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -979,7 +828,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L77">functions/player.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L77">functions/player.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1015,7 +864,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L105">functions/player.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L105">functions/player.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1048,7 +897,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/player.ts#L178">functions/player.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/player.ts#L178">functions/player.ts:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1080,7 +929,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/tears.ts#L8">functions/tears.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/tears.ts#L8">functions/tears.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1110,7 +959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/tears.ts#L19">functions/tears.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/tears.ts#L19">functions/tears.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1143,7 +992,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/ui.ts#L14">functions/ui.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/ui.ts#L14">functions/ui.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1171,7 +1020,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/ui.ts#L58">functions/ui.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/ui.ts#L58">functions/ui.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1200,7 +1049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L9">functions/util.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L9">functions/util.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1237,7 +1086,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L30">functions/util.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L30">functions/util.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1267,7 +1116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L77">functions/util.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L77">functions/util.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1325,7 +1174,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L89">functions/util.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L89">functions/util.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1362,7 +1211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L103">functions/util.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L103">functions/util.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1387,7 +1236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L121">functions/util.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L121">functions/util.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1419,7 +1268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L139">functions/util.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L139">functions/util.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1443,7 +1292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L167">functions/util.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L167">functions/util.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1481,7 +1330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L179">functions/util.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L179">functions/util.ts:179</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1498,7 +1347,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L192">functions/util.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L192">functions/util.ts:192</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1527,7 +1376,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5ee79cb/src/functions/util.ts#L203">functions/util.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/de92af7/src/functions/util.ts#L203">functions/util.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1553,15 +1402,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="enums/ModCallbacksCustom.html" class="tsd-kind-icon">Mod<wbr>Callbacks<wbr>Custom</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/PickingUpItem.html" class="tsd-kind-icon">Picking<wbr>UpItem</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/CallbackParametersCustom.html" class="tsd-kind-icon">Callback<wbr>Parameters<wbr>Custom</a>
-					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="index.html#PlayerIndex" class="tsd-kind-icon">Player<wbr>Index</a>
 					</li>
@@ -1680,16 +1520,10 @@
 						<a href="index.html#removeFlag" class="tsd-kind-icon">remove<wbr>Flag</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="index.html#saveDataManager" class="tsd-kind-icon">save<wbr>Data<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="index.html#sign" class="tsd-kind-icon">sign</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#tanh" class="tsd-kind-icon">tanh</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="index.html#upgradeMod" class="tsd-kind-icon">upgrade<wbr>Mod</a>
 					</li>
 				</ul>
 			</nav>
@@ -1700,13 +1534,6 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
 		</div>
 	</div>
 </footer>
