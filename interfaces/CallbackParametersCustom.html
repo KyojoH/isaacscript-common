@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PickingUpItem | isaacscript-common</title>
+	<title>CallbackParametersCustom | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,21 +55,29 @@
 					<a href="../index.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="PickingUpItem.html">PickingUpItem</a>
+					<a href="CallbackParametersCustom.html">CallbackParametersCustom</a>
 				</li>
 			</ul>
-			<h1>Class PickingUpItem</h1>
+			<h1>Interface CallbackParametersCustom</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This is the format for the custom callbacks, along with optional arguments, if any.</p>
+					</div>
+					<p>Also see the <a href="../index.html#upgradeMod"><code>upgradeMod</code></a> function and the <a href="../enums/ModCallbacksCustom.html"><code>ModCallbacksCustom</code></a> enum.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PickingUpItem</span>
+						<span class="target">CallbackParametersCustom</span>
 					</li>
 				</ul>
 			</section>
@@ -78,64 +86,36 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="PickingUpItem.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="PickingUpItem.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="PickingUpItem.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CallbackParametersCustom.html#0" class="tsd-kind-icon">0</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CallbackParametersCustom.html#1" class="tsd-kind-icon">1</a></li>
 							</ul>
 						</section>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Picking<wbr>UpItem<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="PickingUpItem.html" class="tsd-signature-type" data-tsd-kind="Class">PickingUpItem</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="PickingUpItem.html" class="tsd-signature-type" data-tsd-kind="Class">PickingUpItem</a></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TrinketType</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="0" class="tsd-anchor"></a>
+					<h3>0</h3>
+					<div class="tsd-signature tsd-kind-icon">0<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span>, pickingUpItem<span class="tsd-signature-symbol">: </span><a href="../classes/PickingUpItem.html" class="tsd-signature-type" data-tsd-kind="Class">PickingUpItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span>itemType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">, </span>itemID<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/bf9b9fa/src/types/PickingUpItem.ts#L2">types/PickingUpItem.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/bf9b9fa/src/types/CallbackParametersCustom.ts#L12">types/CallbackParametersCustom.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="1" class="tsd-anchor"></a>
+					<h3>1</h3>
+					<div class="tsd-signature tsd-kind-icon">1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span>, pickingUpItem<span class="tsd-signature-symbol">: </span><a href="../classes/PickingUpItem.html" class="tsd-signature-type" data-tsd-kind="Class">PickingUpItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span>itemType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ItemType</span><span class="tsd-signature-symbol">, </span>itemID<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/bf9b9fa/src/types/PickingUpItem.ts#L4">types/PickingUpItem.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/bf9b9fa/src/types/CallbackParametersCustom.ts#L17">types/CallbackParametersCustom.ts:17</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Needed so that we can distinguish between picking up a collectible and a trinket.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -151,17 +131,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="PickingUpItem.html" class="tsd-kind-icon">Picking<wbr>UpItem</a>
+					<li class="current tsd-kind-interface">
+						<a href="CallbackParametersCustom.html" class="tsd-kind-icon">Callback<wbr>Parameters<wbr>Custom</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="PickingUpItem.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CallbackParametersCustom.html#0" class="tsd-kind-icon">0</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="PickingUpItem.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="PickingUpItem.html#type" class="tsd-kind-icon">type</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CallbackParametersCustom.html#1" class="tsd-kind-icon">1</a>
 							</li>
 						</ul>
 					</li>
