@@ -69,11 +69,10 @@
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>These are the custom callbacks available for use once the mod object has been upgraded.
-						Also see the <a href="../index.html#upgradeMod"><code>upgradeMod</code></a> function and <a href="../interfaces/CallbackParametersCustom.html"><code>CallbackParametersCustom</code></a>.</p>
+						Also see the <a href="../index.html#upgradeMod"><code>upgradeMod</code></a> function.</p>
 					</div>
-					<p>For a better listing of all possible custom callbacks, check out the official
-						<a href="https://isaacscript.github.io/docs/function-signatures#custom-callbacks">Function Signatures</a>
-					docs.</p>
+					<p>For a better listing of all custom callbacks, check out the
+					<a href="https://isaacscript.github.io/docs/function-signatures#custom-callbacks">Function Signatures</a>.</p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -83,7 +82,10 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ModCallbacksCustom.html#MC_POST_GAME_STARTED" class="tsd-kind-icon">MC_<wbr>POST_<wbr>GAME_<wbr>STARTED</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ModCallbacksCustom.html#MC_POST_ITEM_PICKUP" class="tsd-kind-icon">MC_<wbr>POST_<wbr>ITEM_<wbr>PICKUP</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ModCallbacksCustom.html#MC_POST_NEW_LEVEL" class="tsd-kind-icon">MC_<wbr>POST_<wbr>NEW_<wbr>LEVEL</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ModCallbacksCustom.html#MC_POST_NEW_ROOM" class="tsd-kind-icon">MC_<wbr>POST_<wbr>NEW_<wbr>ROOM</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ModCallbacksCustom.html#MC_PRE_ITEM_PICKUP" class="tsd-kind-icon">MC_<wbr>PRE_<wbr>ITEM_<wbr>PICKUP</a></li>
 							</ul>
 						</section>
@@ -93,22 +95,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="MC_POST_ITEM_PICKUP" class="tsd-anchor"></a>
-					<h3>MC_<wbr>POST_<wbr>ITEM_<wbr>PICKUP</h3>
-					<div class="tsd-signature tsd-kind-icon">MC_<wbr>POST_<wbr>ITEM_<wbr>PICKUP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<a name="MC_POST_GAME_STARTED" class="tsd-anchor"></a>
+					<h3>MC_<wbr>POST_<wbr>GAME_<wbr>STARTED</h3>
+					<div class="tsd-signature tsd-kind-icon">MC_<wbr>POST_<wbr>GAME_<wbr>STARTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/a53ff3c/src/types/ModCallbacksCustom.ts#L13">types/ModCallbacksCustom.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d992e81/src/types/ModCallbacksCustom.ts#L13">types/ModCallbacksCustom.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="MC_POST_ITEM_PICKUP" class="tsd-anchor"></a>
+					<h3>MC_<wbr>POST_<wbr>ITEM_<wbr>PICKUP</h3>
+					<div class="tsd-signature tsd-kind-icon">MC_<wbr>POST_<wbr>ITEM_<wbr>PICKUP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d992e81/src/types/ModCallbacksCustom.ts#L17">types/ModCallbacksCustom.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="MC_POST_NEW_LEVEL" class="tsd-anchor"></a>
+					<h3>MC_<wbr>POST_<wbr>NEW_<wbr>LEVEL</h3>
+					<div class="tsd-signature tsd-kind-icon">MC_<wbr>POST_<wbr>NEW_<wbr>LEVEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d992e81/src/types/ModCallbacksCustom.ts#L14">types/ModCallbacksCustom.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="MC_POST_NEW_ROOM" class="tsd-anchor"></a>
+					<h3>MC_<wbr>POST_<wbr>NEW_<wbr>ROOM</h3>
+					<div class="tsd-signature tsd-kind-icon">MC_<wbr>POST_<wbr>NEW_<wbr>ROOM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d992e81/src/types/ModCallbacksCustom.ts#L15">types/ModCallbacksCustom.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="MC_PRE_ITEM_PICKUP" class="tsd-anchor"></a>
 					<h3>MC_<wbr>PRE_<wbr>ITEM_<wbr>PICKUP</h3>
-					<div class="tsd-signature tsd-kind-icon">MC_<wbr>PRE_<wbr>ITEM_<wbr>PICKUP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+					<div class="tsd-signature tsd-kind-icon">MC_<wbr>PRE_<wbr>ITEM_<wbr>PICKUP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/a53ff3c/src/types/ModCallbacksCustom.ts#L12">types/ModCallbacksCustom.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d992e81/src/types/ModCallbacksCustom.ts#L16">types/ModCallbacksCustom.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,7 +162,16 @@
 						<a href="ModCallbacksCustom.html" class="tsd-kind-icon">Mod<wbr>Callbacks<wbr>Custom</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="ModCallbacksCustom.html#MC_POST_GAME_STARTED" class="tsd-kind-icon">MC_<wbr>POST_<wbr>GAME_<wbr>STARTED</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="ModCallbacksCustom.html#MC_POST_ITEM_PICKUP" class="tsd-kind-icon">MC_<wbr>POST_<wbr>ITEM_<wbr>PICKUP</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="ModCallbacksCustom.html#MC_POST_NEW_LEVEL" class="tsd-kind-icon">MC_<wbr>POST_<wbr>NEW_<wbr>LEVEL</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="ModCallbacksCustom.html#MC_POST_NEW_ROOM" class="tsd-kind-icon">MC_<wbr>POST_<wbr>NEW_<wbr>ROOM</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="ModCallbacksCustom.html#MC_PRE_ITEM_PICKUP" class="tsd-kind-icon">MC_<wbr>PRE_<wbr>ITEM_<wbr>PICKUP</a>
@@ -152,9 +193,6 @@
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 		</div>
 	</div>
