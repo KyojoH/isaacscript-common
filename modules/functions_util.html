@@ -1,0 +1,645 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>functions/util | isaacscript-common</title>
+	<meta name="description" content="Documentation for isaacscript-common">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">isaacscript-common</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">isaacscript-common</a>
+				</li>
+				<li>
+					<a href="functions_util.html">functions/util</a>
+				</li>
+			</ul>
+			<h1>Module functions/util</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getAngleDifference" class="tsd-kind-icon">get<wbr>Angle<wbr>Difference</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getItemName" class="tsd-kind-icon">get<wbr>Item<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#inCrawlspace" class="tsd-kind-icon">in<wbr>Crawlspace</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#initRNG" class="tsd-kind-icon">initRNG</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#isRepentanceStage" class="tsd-kind-icon">is<wbr>Repentance<wbr>Stage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerp" class="tsd-kind-icon">lerp</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerpAngleDegrees" class="tsd-kind-icon">lerp<wbr>Angle<wbr>Degrees</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#onSetSeed" class="tsd-kind-icon">on<wbr>Set<wbr>Seed</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="changeRoom" class="tsd-anchor"></a>
+					<h3>change<wbr>Room</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Room<span class="tsd-signature-symbol">(</span>roomIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L8">functions/util.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function for quickly switching to a new room without playing a particular animation.
+										Always use this helper function over invoking <code>Game().ChangeRoom()</code> directly to ensure that you
+									do not forget to set the LeaveDoor property.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>roomIndex: <span class="tsd-signature-type">int</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="deepCopy" class="tsd-anchor"></a>
+					<h3>deep<wbr>Copy</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span>, tableKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L22">functions/util.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>deepCopy recursively copies a table so that none of the nested references remain.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>table: <span class="tsd-signature-type">LuaTable</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tableKey: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LuaTable</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="ensureAllCases" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ensure<wbr>All<wbr>Cases</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>All<wbr>Cases<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L110">functions/util.ts:110</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to get type safety on a switch statement.
+									Very useful to be future-safe against people adding values to a type or an enum.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code><span style="color: #0000FF">enum</span><span style="color: #000000"> </span><span style="color: #267F99">Situations</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #0070C1">Situation1</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #0070C1">Situation2</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #0070C1">Situation3</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #008000">// Situation4, // If we uncomment this line, the program will no longer compile</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">doThingBasedOnSituation</span><span style="color: #000000">(</span><span style="color: #001080">situation</span><span style="color: #000000">: </span><span style="color: #267F99">Situation</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">switch</span><span style="color: #000000"> (</span><span style="color: #001080">situation</span><span style="color: #000000">) {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">case</span><span style="color: #000000"> </span><span style="color: #001080">Situation1</span><span style="color: #000000">: {</span>
+<span style="color: #000000">      </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #098658">41</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+
+<span style="color: #000000">    </span><span style="color: #AF00DB">case</span><span style="color: #000000"> </span><span style="color: #001080">Situation2</span><span style="color: #000000">: {</span>
+<span style="color: #000000">      </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #098658">68</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+
+<span style="color: #000000">    </span><span style="color: #AF00DB">case</span><span style="color: #000000"> </span><span style="color: #001080">Situation3</span><span style="color: #000000">: {</span>
+<span style="color: #000000">      </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #098658">12</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+
+<span style="color: #000000">    </span><span style="color: #AF00DB">default</span><span style="color: #000000">: {</span>
+<span style="color: #000000">      </span><span style="color: #795E26">ensureAllCases</span><span style="color: #000000">(</span><span style="color: #001080">situation</span><span style="color: #000000">);</span>
+<span style="color: #000000">      </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">;</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">}</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">never</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">never</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getAngleDifference" class="tsd-anchor"></a>
+					<h3>get<wbr>Angle<wbr>Difference</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Angle<wbr>Difference<span class="tsd-signature-symbol">(</span>angle1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span>, angle2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L112">functions/util.ts:112</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle1: <span class="tsd-signature-type">float</span></h5>
+								</li>
+								<li>
+									<h5>angle2: <span class="tsd-signature-type">float</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">float</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getEnumValues" class="tsd-anchor"></a>
+					<h3>get<wbr>Enum<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Enum<wbr>Values<span class="tsd-signature-symbol">(</span>transpiledEnum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L125">functions/util.ts:125</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>TypeScriptToLua will transpile TypeScript enums to Lua tables that have a double mapping. Thus,
+										when you iterate over them, you will get both the names of the enums and the values of the enums,
+									in a random order. If all you need are the values of an enum, use this helper function.</p>
+								</div>
+								<p>For a more in depth explanation, see:
+								<a href="https://isaacscript.github.io/docs/gotchas#iterating-over-enums">https://isaacscript.github.io/docs/gotchas#iterating-over-enums</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transpiledEnum: <span class="tsd-signature-type">unknown</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getItemName" class="tsd-anchor"></a>
+					<h3>get<wbr>Item<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>Name<span class="tsd-signature-symbol">(</span>collectibleOrTrinketType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TrinketType</span>, trinket<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L146">functions/util.ts:146</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This is a helper function to get an item name from a CollectibleType or a TrinketType.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">item</span><span style="color: #000000"> = </span><span style="color: #001080">CollectibleType</span><span style="color: #000000">.</span><span style="color: #0070C1">COLLECTIBLE_SAD_ONION</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">itemName</span><span style="color: #000000"> = </span><span style="color: #795E26">getItemName</span><span style="color: #000000">(</span><span style="color: #001080">item</span><span style="color: #000000">); </span><span style="color: #008000">// itemName is now &quot;Sad Onion&quot;</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>collectibleOrTrinketType: <span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TrinketType</span></h5>
+								</li>
+								<li>
+									<h5>trinket: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getRoomIndex" class="tsd-anchor"></a>
+					<h3>get<wbr>Room<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L174">functions/util.ts:174</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to get the room index of the current room. Use this instead of calling
+										<code>Game().GetLevel().GetCurrentRoomIndex()</code> directly to avoid bugs with big rooms.
+										(Big rooms can return the specific 1x1 quadrant that the player is in, which can break data
+									structures that use the room index as an index.)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="gridToPos" class="tsd-anchor"></a>
+					<h3>grid<wbr>ToPos</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">grid<wbr>ToPos<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L191">functions/util.ts:191</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts a room X and Y coordinate to a position. For example, the coordinates of 0, 0 are
+									equal to <code>Vector(80, 160)</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">int</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">int</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="inCrawlspace" class="tsd-anchor"></a>
+					<h3>in<wbr>Crawlspace</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">in<wbr>Crawlspace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L208">functions/util.ts:208</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function for determining whether the current room is a crawlspace. Use this function over
+										comparing to <code>GridRooms.ROOM_DUNGEON_IDX</code> directly since there is a special case of the player
+									being in The Beast room.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="initRNG" class="tsd-anchor"></a>
+					<h3>initRNG</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">initRNG<span class="tsd-signature-symbol">(</span>seed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RNG</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L236">functions/util.ts:236</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to initialize an RNG object.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">startSeed</span><span style="color: #000000"> = </span><span style="color: #795E26">Game</span><span style="color: #000000">():</span><span style="color: #795E26">GetSeeds</span><span style="color: #000000">():</span><span style="color: #795E26">GetStartSeed</span><span style="color: #000000">();</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">rng</span><span style="color: #000000"> = </span><span style="color: #795E26">initRNG</span><span style="color: #000000">(</span><span style="color: #001080">startSeed</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fiftyFiftyChance</span><span style="color: #000000"> = </span><span style="color: #001080">rng</span><span style="color: #000000">.</span><span style="color: #795E26">RandomInt</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) === </span><span style="color: #098658">0</span><span style="color: #000000">;</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>seed: <span class="tsd-signature-type">int</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The seed to initialize it with.
+											(If you aren&#39;t initializing it with a seed, then don&#39;t use this function and instead simply call
+										the <code>RNG()</code> constructor.)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RNG</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isRepentanceStage" class="tsd-anchor"></a>
+					<h3>is<wbr>Repentance<wbr>Stage</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Repentance<wbr>Stage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L245">functions/util.ts:245</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="lerp" class="tsd-anchor"></a>
+					<h3>lerp</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">lerp<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L256">functions/util.ts:256</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>pos: <span class="tsd-signature-type">float</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="lerpAngleDegrees" class="tsd-anchor"></a>
+					<h3>lerp<wbr>Angle<wbr>Degrees</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">lerp<wbr>Angle<wbr>Degrees<span class="tsd-signature-symbol">(</span>aStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, aEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, percent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L260">functions/util.ts:260</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>aStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>aEnd: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>percent: <span class="tsd-signature-type">float</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="onSetSeed" class="tsd-anchor"></a>
+					<h3>on<wbr>Set<wbr>Seed</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Set<wbr>Seed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9b46a3a/src/functions/util.ts#L273">functions/util.ts:273</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Whether or not the player is playing on a set seed (i.e. that they entered in a specific seed by
+										pressing tab on the character selection screen). When the player resets the game on a set seed,
+									the game will not switch to a different seed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="callbacks_upgradeMod.html">callbacks/upgrade<wbr>Mod</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="features_saveDataManager.html">features/save<wbr>Data<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_array.html">functions/array</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_entity.html">functions/entity</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_flags.html">functions/flags</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_gridEntity.html">functions/grid<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_input.html">functions/input</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_log.html">functions/log</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_math.html">functions/math</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_player.html">functions/player</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_random.html">functions/random</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_tears.html">functions/tears</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_ui.html">functions/ui</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="functions_util.html">functions/util</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#getAngleDifference" class="tsd-kind-icon">get<wbr>Angle<wbr>Difference</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#getItemName" class="tsd-kind-icon">get<wbr>Item<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#inCrawlspace" class="tsd-kind-icon">in<wbr>Crawlspace</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#initRNG" class="tsd-kind-icon">initRNG</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#isRepentanceStage" class="tsd-kind-icon">is<wbr>Repentance<wbr>Stage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#lerp" class="tsd-kind-icon">lerp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#lerpAngleDegrees" class="tsd-kind-icon">lerp<wbr>Angle<wbr>Degrees</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#onSetSeed" class="tsd-kind-icon">on<wbr>Set<wbr>Seed</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
