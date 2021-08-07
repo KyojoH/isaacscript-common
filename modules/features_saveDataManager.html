@@ -90,7 +90,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6793b87/src/features/saveDataManager.ts#L92">features/saveDataManager.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/85ef428/src/features/saveDataManager.ts#L88">features/saveDataManager.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -143,12 +143,7 @@
 <span style="color: #000000">  }</span>
 <span style="color: #000000">}</span>
 </code></pre>
-								<p>Save data is recorded to disk in a way that matches/emulates what the real game does for its run
-								data:</p>
-								<ol>
-									<li>on game exit</li>
-									<li>at the beginning of every level (in case the game crashes)</li>
-								</ol>
+								<p>Save data is recorded to disk in the MC_PRE_GAME_EXIT callback.</p>
 								<p>Note that before using the save data manager, you must call the <code>&lt;a href=&quot;callbacks_upgradeMod.html#upgradeMod&quot;&gt;upgradeMod&lt;/a&gt;</code> function.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
