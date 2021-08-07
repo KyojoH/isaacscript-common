@@ -84,13 +84,13 @@
 					<a name="saveDataManager" class="tsd-anchor"></a>
 					<h3>save<wbr>Data<wbr>Manager</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>Data<wbr>Manager<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, saveData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SaveData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Data<wbr>Manager<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, saveData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SaveData</span>, conditionalFunc<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/78abba4/src/features/saveDataManager.ts#L84">features/saveDataManager.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/3ffb10c/src/features/saveDataManager.ts#L92">features/saveDataManager.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -143,6 +143,12 @@
 <span style="color: #000000">  }</span>
 <span style="color: #000000">}</span>
 </code></pre>
+								<p>Save data is recorded to disk in a way that matches/emulates what the real game does for its run
+								data:</p>
+								<ol>
+									<li>on game exit</li>
+									<li>at the beginning of every level (in case the game crashes)</li>
+								</ol>
 								<p>Note that before using the save data manager, you must call the <code>&lt;a href=&quot;callbacks_upgradeMod.html#upgradeMod&quot;&gt;upgradeMod&lt;/a&gt;</code> function.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -161,6 +167,26 @@
 										<p>An object with one or more child-objects of &quot;persistent&quot;, &quot;run&quot;, &quot;level&quot;, or
 										&quot;room&quot;.</p>
 									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> conditionalFunc: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An optional function to run upon saving this key to disk. If the function
+											is false, the key will not be written to disk. This allows mod features to avoid cluttering the
+										&quot;save#.dat&quot; file with unnecessary keys.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
