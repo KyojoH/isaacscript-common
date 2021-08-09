@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions/tears | isaacscript-common</title>
+	<title>functions/stage | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="functions_tears.html">functions/tears</a>
+					<a href="functions_stage.html">functions/stage</a>
 				</li>
 			</ul>
-			<h1>Module functions/tears</h1>
+			<h1>Module functions/stage</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#getFireDelay" class="tsd-kind-icon">get<wbr>Fire<wbr>Delay</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#getTearsStat" class="tsd-kind-icon">get<wbr>Tears<wbr>Stat</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onChest" class="tsd-kind-icon">on<wbr>Chest</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onDarkRoom" class="tsd-kind-icon">on<wbr>Dark<wbr>Room</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onRepentanceStage" class="tsd-kind-icon">on<wbr>Repentance<wbr>Stage</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,62 +83,53 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getFireDelay" class="tsd-anchor"></a>
-					<h3>get<wbr>Fire<wbr>Delay</h3>
+					<a name="onChest" class="tsd-anchor"></a>
+					<h3>on<wbr>Chest</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Fire<wbr>Delay<span class="tsd-signature-symbol">(</span>tearsStat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Chest<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/eb3ed5a/src/functions/tears.ts#L6">functions/tears.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/eb3ed5a/src/functions/stage.ts#L12">functions/stage.ts:12</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The <code>EntityPlayer</code> object stores a player&#39;s tear rate in the <code>MaxFireDelay</code> attribute. This is
-										equivalent to how many tears the player can shoot per frame. If you already have a &quot;tears&quot; stat
-									and you want to convert it back to MaxFireDelay, then use this function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>tearsStat: <span class="tsd-signature-type">float</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">float</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getTearsStat" class="tsd-anchor"></a>
-					<h3>get<wbr>Tears<wbr>Stat</h3>
+					<a name="onDarkRoom" class="tsd-anchor"></a>
+					<h3>on<wbr>Dark<wbr>Room</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Tears<wbr>Stat<span class="tsd-signature-symbol">(</span>fireDelay<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Dark<wbr>Room<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/eb3ed5a/src/functions/tears.ts#L15">functions/tears.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/eb3ed5a/src/functions/stage.ts#L21">functions/stage.ts:21</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The <code>EntityPlayer</code> object stores a player&#39;s tear rate in the <code>MaxFireDelay</code> attribute. This is
-										equivalent to how many tears the player can shoot per frame. If you want to convert this to the
-									&quot;tears&quot; stat that is referred to on the wiki and so forth, then use this function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>fireDelay: <span class="tsd-signature-type">float</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">float</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="onRepentanceStage" class="tsd-anchor"></a>
+					<h3>on<wbr>Repentance<wbr>Stage</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Repentance<wbr>Stage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/eb3ed5a/src/functions/stage.ts#L1">functions/stage.ts:1</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -182,10 +174,10 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_random.html">functions/random</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="functions_stage.html">functions/stage</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="functions_tears.html">functions/tears</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -199,10 +191,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_tears.html#getFireDelay" class="tsd-kind-icon">get<wbr>Fire<wbr>Delay</a>
+						<a href="functions_stage.html#onChest" class="tsd-kind-icon">on<wbr>Chest</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_tears.html#getTearsStat" class="tsd-kind-icon">get<wbr>Tears<wbr>Stat</a>
+						<a href="functions_stage.html#onDarkRoom" class="tsd-kind-icon">on<wbr>Dark<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_stage.html#onRepentanceStage" class="tsd-kind-icon">on<wbr>Repentance<wbr>Stage</a>
 					</li>
 				</ul>
 			</nav>
