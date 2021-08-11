@@ -77,6 +77,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="functions_array.html#arrayRemove" class="tsd-kind-icon">array<wbr>Remove</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="functions_array.html#getRandomArrayElement" class="tsd-kind-icon">get<wbr>Random<wbr>Array<wbr>Element</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="functions_array.html#initArray" class="tsd-kind-icon">init<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_array.html#isArray" class="tsd-kind-icon">is<wbr>Array</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a67cc6/src/functions/array.ts#L20">functions/array.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/600eef5/src/functions/array.ts#L20">functions/array.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -123,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a67cc6/src/functions/array.ts#L6">functions/array.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/600eef5/src/functions/array.ts#L6">functions/array.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -160,7 +161,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a67cc6/src/functions/array.ts#L32">functions/array.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/600eef5/src/functions/array.ts#L32">functions/array.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -197,7 +198,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a67cc6/src/functions/array.ts#L24">functions/array.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/600eef5/src/functions/array.ts#L24">functions/array.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -229,7 +230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a67cc6/src/functions/array.ts#L48">functions/array.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/600eef5/src/functions/array.ts#L48">functions/array.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,6 +257,37 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isArray" class="tsd-anchor"></a>
+					<h3>is<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">(</span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/600eef5/src/functions/array.ts#L63">functions/array.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Since Lua uses tables for every non-primitive data structure,
+										it is non-trivial to determine if a particular table is being used as an array.
+										isArray returns true if the table contains all numerical indexes that are contiguous,
+									starting at 1.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>table: <span class="tsd-signature-type">LuaTable</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -330,6 +362,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="functions_array.html#initArray" class="tsd-kind-icon">init<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_array.html#isArray" class="tsd-kind-icon">is<wbr>Array</a>
 					</li>
 				</ul>
 			</nav>
