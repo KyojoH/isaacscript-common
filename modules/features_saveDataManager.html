@@ -72,6 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="features_saveDataManager.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="features_saveDataManager.html#saveDataManager" class="tsd-kind-icon">save<wbr>Data<wbr>Manager</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="features_saveDataManager.html#saveDataManagerSave" class="tsd-kind-icon">save<wbr>Data<wbr>Manager<wbr>Save</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="features_saveDataManager.html#saveDataManagerSetGlobal" class="tsd-kind-icon">save<wbr>Data<wbr>Manager<wbr>Set<wbr>Global</a></li>
@@ -83,6 +84,29 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>incomingMod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ModUpgraded</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/features/saveDataManager.ts#L18">features/saveDataManager.ts:18</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>incomingMod: <span class="tsd-signature-type">ModUpgraded</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="saveDataManager" class="tsd-anchor"></a>
 					<h3>save<wbr>Data<wbr>Manager</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -92,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/features/saveDataManager.ts#L88">features/saveDataManager.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/features/saveDataManager.ts#L91">features/saveDataManager.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -146,7 +170,7 @@
 <span style="color: #000000">}</span>
 </code></pre>
 								<p>Save data is recorded to disk in the MC_PRE_GAME_EXIT callback.</p>
-								<p>Note that before using the save data manager, you must call the <a href="callbacks_upgradeMod.html#upgradeMod"><code>upgradeMod</code></a> function.</p>
+								<p>Note that before using the save data manager, you must call the [[<code>upgradeMod</code>]] function.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -200,9 +224,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/features/saveDataManager.ts#L337">features/saveDataManager.ts:337</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/features/saveDataManager.ts#L238">features/saveDataManager.ts:238</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The save data manager will automatically save variables to disk at the appropriate times (i.e.
+										when the run is exited). Use this function to explicitly force the save data manager to write all
+									of its variables to disk immediately.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -217,7 +248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/features/saveDataManager.ts#L350">features/saveDataManager.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/features/saveDataManager.ts#L255">features/saveDataManager.ts:255</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,14 +271,14 @@
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="callbacks_upgradeMod.html">callbacks/upgrade<wbr>Mod</a>
-					</li>
 					<li class="current tsd-kind-module">
 						<a href="features_saveDataManager.html">features/save<wbr>Data<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_array.html">functions/array</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_deepCopy.html">functions/deep<wbr>Copy</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_entity.html">functions/entity</a>
@@ -260,6 +291,12 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_input.html">functions/input</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_items.html">functions/items</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_json.html">functions/json</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_log.html">functions/log</a>
@@ -280,6 +317,9 @@
 						<a href="functions_tears.html">functions/tears</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="functions_transformations.html">functions/transformations</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="functions_ui.html">functions/ui</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -289,6 +329,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="features_saveDataManager.html#init" class="tsd-kind-icon">init</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="features_saveDataManager.html#saveDataManager" class="tsd-kind-icon">save<wbr>Data<wbr>Manager</a>
 					</li>

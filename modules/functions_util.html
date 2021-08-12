@@ -73,7 +73,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getAngleDifference" class="tsd-kind-icon">get<wbr>Angle<wbr>Difference</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a></li>
@@ -84,6 +83,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerp" class="tsd-kind-icon">lerp</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerpAngleDegrees" class="tsd-kind-icon">lerp<wbr>Angle<wbr>Degrees</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#onSetSeed" class="tsd-kind-icon">on<wbr>Set<wbr>Seed</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#tableClear" class="tsd-kind-icon">table<wbr>Clear</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,7 +101,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L8">functions/util.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L8">functions/util.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -122,37 +122,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="deepCopy" class="tsd-anchor"></a>
-					<h3>deep<wbr>Copy</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldTable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span>, tableName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L20">functions/util.ts:20</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>deepCopy recursively copies a table so that none of the nested references remain.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>oldTable: <span class="tsd-signature-type">LuaTable</span></h5>
-								</li>
-								<li>
-									<h5>tableName: <span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol"> = ...</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LuaTable</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="ensureAllCases" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> ensure<wbr>All<wbr>Cases</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -162,7 +131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L135">functions/util.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L54">functions/util.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L137">functions/util.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L56">functions/util.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -246,7 +215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L150">functions/util.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L69">functions/util.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L168">functions/util.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L87">functions/util.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L185">functions/util.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L104">functions/util.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -335,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L202">functions/util.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L121">functions/util.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L230">functions/util.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L149">functions/util.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -397,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L239">functions/util.ts:239</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L158">functions/util.ts:158</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -426,7 +395,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L243">functions/util.ts:243</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L162">functions/util.ts:162</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -455,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/23387d6/src/functions/util.ts#L256">functions/util.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L175">functions/util.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -469,6 +438,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="tableClear" class="tsd-anchor"></a>
+					<h3>table<wbr>Clear</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">table<wbr>Clear<span class="tsd-signature-symbol">(</span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/util.ts#L188">functions/util.ts:188</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>In a Map, you can use the <code>clear</code> method to delete every element. However, in a LuaTable, the
+									<code>clear</code> method does not exist. Use this helper function as a drop-in replacement for this.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>table: <span class="tsd-signature-type">LuaTable</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -478,13 +476,13 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="callbacks_upgradeMod.html">callbacks/upgrade<wbr>Mod</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="features_saveDataManager.html">features/save<wbr>Data<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_array.html">functions/array</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_deepCopy.html">functions/deep<wbr>Copy</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_entity.html">functions/entity</a>
@@ -497,6 +495,12 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_input.html">functions/input</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_items.html">functions/items</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions_json.html">functions/json</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="functions_log.html">functions/log</a>
@@ -517,6 +521,9 @@
 						<a href="functions_tears.html">functions/tears</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="functions_transformations.html">functions/transformations</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="functions_ui.html">functions/ui</a>
 					</li>
 					<li class="current tsd-kind-module">
@@ -528,9 +535,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a>
@@ -561,6 +565,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#onSetSeed" class="tsd-kind-icon">on<wbr>Set<wbr>Seed</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_util.html#tableClear" class="tsd-kind-icon">table<wbr>Clear</a>
 					</li>
 				</ul>
 			</nav>

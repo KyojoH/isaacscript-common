@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions/input | isaacscript-common</title>
+	<title>functions/transformations | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="functions_input.html">functions/input</a>
+					<a href="functions_transformations.html">functions/transformations</a>
 				</li>
 			</ul>
-			<h1>Module functions/input</h1>
+			<h1>Module functions/transformations</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_input.html#isActionPressedOnAnyInput" class="tsd-kind-icon">is<wbr>Action<wbr>Pressed<wbr>OnAny<wbr>Input</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_input.html#isActionTriggeredOnAnyInput" class="tsd-kind-icon">is<wbr>Action<wbr>Triggered<wbr>OnAny<wbr>Input</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_transformations.html#getPlayerNumTransformationCollectibles" class="tsd-kind-icon">get<wbr>Player<wbr>Num<wbr>Transformation<wbr>Collectibles</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_transformations.html#initTransformationTracking" class="tsd-kind-icon">init<wbr>Transformation<wbr>Tracking</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,59 +82,58 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="isActionPressedOnAnyInput" class="tsd-anchor"></a>
-					<h3>is<wbr>Action<wbr>Pressed<wbr>OnAny<wbr>Input</h3>
+					<a name="getPlayerNumTransformationCollectibles" class="tsd-anchor"></a>
+					<h3>get<wbr>Player<wbr>Num<wbr>Transformation<wbr>Collectibles</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Action<wbr>Pressed<wbr>OnAny<wbr>Input<span class="tsd-signature-symbol">(</span>buttonAction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ButtonAction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Player<wbr>Num<wbr>Transformation<wbr>Collectibles<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span>, playerForm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PlayerForm</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/input.ts#L6">functions/input.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/transformations.ts#L57">functions/transformations.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Iterates over all 4 inputs to see if a particular button is pressed (i.e. held down).</p>
+									<p>Returns the number of items that a player has towards a particular transformation.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>buttonAction: <span class="tsd-signature-type">ButtonAction</span></h5>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
+								</li>
+								<li>
+									<h5>playerForm: <span class="tsd-signature-type">PlayerForm</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="isActionTriggeredOnAnyInput" class="tsd-anchor"></a>
-					<h3>is<wbr>Action<wbr>Triggered<wbr>OnAny<wbr>Input</h3>
+					<a name="initTransformationTracking" class="tsd-anchor"></a>
+					<h3>init<wbr>Transformation<wbr>Tracking</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Action<wbr>Triggered<wbr>OnAny<wbr>Input<span class="tsd-signature-symbol">(</span>buttonAction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ButtonAction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Transformation<wbr>Tracking<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/input.ts#L20">functions/input.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4f1f432/src/functions/transformations.ts#L33">functions/transformations.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Iterates over all 4 inputs to see if a particular button is triggered
-									(i.e. held down and then released).</p>
+									<p>In order to use the <code>getPlayerNumTransformationCollectibles</code> function, you must first call this
+										function at the beginning of your mod to initialize the necessary data structures.
+										This function iterates over every item in the game to determine which items have which tags.
+									Then, it stores the information in a map for future use.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>buttonAction: <span class="tsd-signature-type">ButtonAction</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -164,7 +163,7 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_gridEntity.html">functions/grid<wbr>Entity</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="functions_input.html">functions/input</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -191,7 +190,7 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_tears.html">functions/tears</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="functions_transformations.html">functions/transformations</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -205,10 +204,10 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_input.html#isActionPressedOnAnyInput" class="tsd-kind-icon">is<wbr>Action<wbr>Pressed<wbr>OnAny<wbr>Input</a>
+						<a href="functions_transformations.html#getPlayerNumTransformationCollectibles" class="tsd-kind-icon">get<wbr>Player<wbr>Num<wbr>Transformation<wbr>Collectibles</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_input.html#isActionTriggeredOnAnyInput" class="tsd-kind-icon">is<wbr>Action<wbr>Triggered<wbr>OnAny<wbr>Input</a>
+						<a href="functions_transformations.html#initTransformationTracking" class="tsd-kind-icon">init<wbr>Transformation<wbr>Tracking</a>
 					</li>
 				</ul>
 			</nav>
