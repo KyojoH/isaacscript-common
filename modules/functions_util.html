@@ -72,13 +72,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getAngleDifference" class="tsd-kind-icon">get<wbr>Angle<wbr>Difference</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#inCrawlspace" class="tsd-kind-icon">in<wbr>Crawlspace</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#initRNG" class="tsd-kind-icon">initRNG</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerp" class="tsd-kind-icon">lerp</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerpAngleDegrees" class="tsd-kind-icon">lerp<wbr>Angle<wbr>Degrees</a></li>
@@ -92,36 +87,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="changeRoom" class="tsd-anchor"></a>
-					<h3>change<wbr>Room</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">change<wbr>Room<span class="tsd-signature-symbol">(</span>roomIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L8">functions/util.ts:8</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Helper function for quickly switching to a new room without playing a particular animation.
-										Always use this helper function over invoking <code>Game().ChangeRoom()</code> directly to ensure that you
-									do not forget to set the LeaveDoor property.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>roomIndex: <span class="tsd-signature-type">int</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="ensureAllCases" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> ensure<wbr>All<wbr>Cases</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -131,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L54">functions/util.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L39">functions/util.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -180,32 +145,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getAngleDifference" class="tsd-anchor"></a>
-					<h3>get<wbr>Angle<wbr>Difference</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Angle<wbr>Difference<span class="tsd-signature-symbol">(</span>angle1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span>, angle2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L56">functions/util.ts:56</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>angle1: <span class="tsd-signature-type">float</span></h5>
-								</li>
-								<li>
-									<h5>angle2: <span class="tsd-signature-type">float</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">float</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="getEnumValues" class="tsd-anchor"></a>
 					<h3>get<wbr>Enum<wbr>Values</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -215,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L69">functions/util.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L49">functions/util.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -238,87 +177,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getRoomIndex" class="tsd-anchor"></a>
-					<h3>get<wbr>Room<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L87">functions/util.ts:87</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Helper function to get the room index of the current room. Use this instead of calling
-										<code>Game().GetLevel().GetCurrentRoomIndex()</code> directly to avoid bugs with big rooms.
-										(Big rooms can return the specific 1x1 quadrant that the player is in, which can break data
-									structures that use the room index as an index.)</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="gridToPos" class="tsd-anchor"></a>
-					<h3>grid<wbr>ToPos</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">grid<wbr>ToPos<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L104">functions/util.ts:104</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Converts a room X and Y coordinate to a position. For example, the coordinates of 0, 0 are
-									equal to <code>Vector(80, 160)</code>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>x: <span class="tsd-signature-type">int</span></h5>
-								</li>
-								<li>
-									<h5>y: <span class="tsd-signature-type">int</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="inCrawlspace" class="tsd-anchor"></a>
-					<h3>in<wbr>Crawlspace</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">in<wbr>Crawlspace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L121">functions/util.ts:121</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Helper function for determining whether the current room is a crawlspace. Use this function over
-										comparing to <code>GridRooms.ROOM_DUNGEON_IDX</code> directly since there is a special case of the player
-									being in The Beast room.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="initRNG" class="tsd-anchor"></a>
 					<h3>initRNG</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -328,7 +186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L149">functions/util.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L75">functions/util.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -366,7 +224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L158">functions/util.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L84">functions/util.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -395,7 +253,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L162">functions/util.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L88">functions/util.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -424,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L175">functions/util.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L101">functions/util.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -448,7 +306,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/9da7764/src/functions/util.ts#L188">functions/util.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ca35c99/src/functions/util.ts#L114">functions/util.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,6 +373,9 @@
 						<a href="functions_random.html">functions/random</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="functions_rooms.html">functions/rooms</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="functions_stage.html">functions/stage</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -537,25 +398,10 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#getAngleDifference" class="tsd-kind-icon">get<wbr>Angle<wbr>Difference</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#inCrawlspace" class="tsd-kind-icon">in<wbr>Crawlspace</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#initRNG" class="tsd-kind-icon">initRNG</a>
