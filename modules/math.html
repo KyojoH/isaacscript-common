@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions/stage | isaacscript-common</title>
+	<title>math | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="functions_stage.html">functions/stage</a>
+					<a href="math.html">math</a>
 				</li>
 			</ul>
-			<h1>Module functions/stage</h1>
+			<h1>Module math</h1>
 		</div>
 	</div>
 </header>
@@ -72,11 +72,10 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onCathedral" class="tsd-kind-icon">on<wbr>Cathedral</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onChest" class="tsd-kind-icon">on<wbr>Chest</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onDarkRoom" class="tsd-kind-icon">on<wbr>Dark<wbr>Room</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onRepentanceStage" class="tsd-kind-icon">on<wbr>Repentance<wbr>Stage</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onSheol" class="tsd-kind-icon">on<wbr>Sheol</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isEven" class="tsd-kind-icon">is<wbr>Even</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isOdd" class="tsd-kind-icon">is<wbr>Odd</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#sign" class="tsd-kind-icon">sign</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#tanh" class="tsd-kind-icon">tanh</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,87 +84,95 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="onCathedral" class="tsd-anchor"></a>
-					<h3>on<wbr>Cathedral</h3>
+					<a name="isEven" class="tsd-anchor"></a>
+					<h3>is<wbr>Even</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Cathedral<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Even<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/stage.ts#L12">functions/stage.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/f0d8fa1/src/functions/math.ts#L1">math.ts:1</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>num: <span class="tsd-signature-type">int</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="onChest" class="tsd-anchor"></a>
-					<h3>on<wbr>Chest</h3>
+					<a name="isOdd" class="tsd-anchor"></a>
+					<h3>is<wbr>Odd</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Chest<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Odd<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/stage.ts#L21">functions/stage.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/f0d8fa1/src/functions/math.ts#L5">math.ts:5</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>num: <span class="tsd-signature-type">int</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="onDarkRoom" class="tsd-anchor"></a>
-					<h3>on<wbr>Dark<wbr>Room</h3>
+					<a name="sign" class="tsd-anchor"></a>
+					<h3>sign</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Dark<wbr>Room<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">sign<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/stage.ts#L30">functions/stage.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/f0d8fa1/src/functions/math.ts#L16">math.ts:16</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+							<p>1 if n is positive, -1 if n is negative, or 0 if n is 0.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="onRepentanceStage" class="tsd-anchor"></a>
-					<h3>on<wbr>Repentance<wbr>Stage</h3>
+					<a name="tanh" class="tsd-anchor"></a>
+					<h3>tanh</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Repentance<wbr>Stage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">tanh<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/stage.ts#L1">functions/stage.ts:1</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/f0d8fa1/src/functions/math.ts#L9">math.ts:9</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="onSheol" class="tsd-anchor"></a>
-					<h3>on<wbr>Sheol</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Sheol<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/stage.ts#L39">functions/stage.ts:39</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -178,77 +185,71 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="features_saveDataManager.html">features/save<wbr>Data<wbr>Manager</a>
+						<a href="array.html">array</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_array.html">functions/array</a>
+						<a href="deepCopy.html">deep<wbr>Copy</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_deepCopy.html">functions/deep<wbr>Copy</a>
+						<a href="entity.html">entity</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_entity.html">functions/entity</a>
+						<a href="flag.html">flag</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_flag.html">functions/flag</a>
+						<a href="gridEntity.html">grid<wbr>Entity</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_gridEntity.html">functions/grid<wbr>Entity</a>
+						<a href="input.html">input</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_input.html">functions/input</a>
+						<a href="items.html">items</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_items.html">functions/items</a>
+						<a href="json.html">json</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_json.html">functions/json</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_log.html">functions/log</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_math.html">functions/math</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_player.html">functions/player</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_random.html">functions/random</a>
+						<a href="log.html">log</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="functions_stage.html">functions/stage</a>
+						<a href="math.html">math</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_tears.html">functions/tears</a>
+						<a href="player.html">player</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_transformations.html">functions/transformations</a>
+						<a href="random.html">random</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_ui.html">functions/ui</a>
+						<a href="stage.html">stage</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_util.html">functions/util</a>
+						<a href="tears.html">tears</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="transformations.html">transformations</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="ui.html">ui</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="util.html">util</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_stage.html#onCathedral" class="tsd-kind-icon">on<wbr>Cathedral</a>
+						<a href="math.html#isEven" class="tsd-kind-icon">is<wbr>Even</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_stage.html#onChest" class="tsd-kind-icon">on<wbr>Chest</a>
+						<a href="math.html#isOdd" class="tsd-kind-icon">is<wbr>Odd</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_stage.html#onDarkRoom" class="tsd-kind-icon">on<wbr>Dark<wbr>Room</a>
+						<a href="math.html#sign" class="tsd-kind-icon">sign</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_stage.html#onRepentanceStage" class="tsd-kind-icon">on<wbr>Repentance<wbr>Stage</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_stage.html#onSheol" class="tsd-kind-icon">on<wbr>Sheol</a>
+						<a href="math.html#tanh" class="tsd-kind-icon">tanh</a>
 					</li>
 				</ul>
 			</nav>

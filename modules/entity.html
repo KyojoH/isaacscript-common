@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions/tears | isaacscript-common</title>
+	<title>entity | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="functions_tears.html">functions/tears</a>
+					<a href="entity.html">entity</a>
 				</li>
 			</ul>
-			<h1>Module functions/tears</h1>
+			<h1>Module entity</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#getFireDelay" class="tsd-kind-icon">get<wbr>Fire<wbr>Delay</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#getTearsStat" class="tsd-kind-icon">get<wbr>Tears<wbr>Stat</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="entity.html#getRoomNPCs" class="tsd-kind-icon">get<wbr>RoomNPCs</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,62 +81,31 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getFireDelay" class="tsd-anchor"></a>
-					<h3>get<wbr>Fire<wbr>Delay</h3>
+					<a name="getRoomNPCs" class="tsd-anchor"></a>
+					<h3>get<wbr>RoomNPCs</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Fire<wbr>Delay<span class="tsd-signature-symbol">(</span>tearsStat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>RoomNPCs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityNPC</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/tears.ts#L6">functions/tears.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/f0d8fa1/src/functions/entity.ts#L13">entity.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>The <code>EntityPlayer</code> object stores a player&#39;s tear rate in the <code>MaxFireDelay</code> attribute. This is
-										equivalent to how many tears the player can shoot per frame. If you already have a &quot;tears&quot; stat
-									and you want to convert it back to MaxFireDelay, then use this function.</p>
+									<p>Helper function to get all the NPCs in the room. Due to bugs with <code>Isaac.FindInRadius()</code>,
+									this function uses <code>Isaac.GetRoomEntities()</code>, which is more expensive but also more robust.</p>
 								</div>
+								<p>Example:</p>
+								<pre><code><span style="color: #008000">// Remove all of the enemies in the room</span>
+<span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">npc</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #795E26">getRoomNPCs</span><span style="color: #000000">()) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">npc</span><span style="color: #000000">.</span><span style="color: #795E26">Remove</span><span style="color: #000000">();</span>
+<span style="color: #000000">}</span>
+</code></pre>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>tearsStat: <span class="tsd-signature-type">float</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">float</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getTearsStat" class="tsd-anchor"></a>
-					<h3>get<wbr>Tears<wbr>Stat</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Tears<wbr>Stat<span class="tsd-signature-symbol">(</span>fireDelay<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/90a2fa4/src/functions/tears.ts#L15">functions/tears.ts:15</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The <code>EntityPlayer</code> object stores a player&#39;s tear rate in the <code>MaxFireDelay</code> attribute. This is
-										equivalent to how many tears the player can shoot per frame. If you want to convert this to the
-									&quot;tears&quot; stat that is referred to on the wiki and so forth, then use this function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>fireDelay: <span class="tsd-signature-type">float</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">float</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EntityNPC</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -150,68 +118,62 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="features_saveDataManager.html">features/save<wbr>Data<wbr>Manager</a>
+						<a href="array.html">array</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_array.html">functions/array</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_deepCopy.html">functions/deep<wbr>Copy</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_entity.html">functions/entity</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_flag.html">functions/flag</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_gridEntity.html">functions/grid<wbr>Entity</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_input.html">functions/input</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_items.html">functions/items</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_json.html">functions/json</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_log.html">functions/log</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_math.html">functions/math</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_player.html">functions/player</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_random.html">functions/random</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="functions_stage.html">functions/stage</a>
+						<a href="deepCopy.html">deep<wbr>Copy</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="functions_tears.html">functions/tears</a>
+						<a href="entity.html">entity</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_transformations.html">functions/transformations</a>
+						<a href="flag.html">flag</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_ui.html">functions/ui</a>
+						<a href="gridEntity.html">grid<wbr>Entity</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="functions_util.html">functions/util</a>
+						<a href="input.html">input</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="items.html">items</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="json.html">json</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="log.html">log</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="math.html">math</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="player.html">player</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="random.html">random</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="stage.html">stage</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="tears.html">tears</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="transformations.html">transformations</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="ui.html">ui</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="util.html">util</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_tears.html#getFireDelay" class="tsd-kind-icon">get<wbr>Fire<wbr>Delay</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_tears.html#getTearsStat" class="tsd-kind-icon">get<wbr>Tears<wbr>Stat</a>
+						<a href="entity.html#getRoomNPCs" class="tsd-kind-icon">get<wbr>RoomNPCs</a>
 					</li>
 				</ul>
 			</nav>
