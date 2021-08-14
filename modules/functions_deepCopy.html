@@ -91,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a2639d/src/functions/deepCopy.ts#L159">functions/deepCopy.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/83d6e59/src/functions/deepCopy.ts#L177">functions/deepCopy.ts:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -111,22 +111,26 @@
 					<a name="deepCopy" class="tsd-anchor"></a>
 					<h3>deep<wbr>Copy</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldTable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span>, convertMapsToTables<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span></li>
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldTable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span>, shouldSerialize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/2a2639d/src/functions/deepCopy.ts#L12">functions/deepCopy.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/83d6e59/src/functions/deepCopy.ts#L19">functions/deepCopy.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>deepCopy recursively copies a table so that none of the nested references remain.
-										It will refuse to copy tables that have metatables, since that indicates that it the table is a
-										special object of some kind and cannot be copied in a generically safe way. The one exception is
-									TypeScriptToLua maps, which this function has explicit logic to support.</p>
+									<p>deepCopy recursively copies a table so that none of the nested references remain.</p>
 								</div>
+								<p>It will refuse to copy tables that have metatables, since that indicates that it the table is a
+								special object of some kind and cannot be copied in a generically safe way.</p>
+								<p>There are two exceptions, which the function has explicit logic to support:</p>
+								<ol>
+									<li>TypeScriptToLua maps</li>
+									<li>Vectors</li>
+								</ol>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -137,10 +141,10 @@
 									</div>
 								</li>
 								<li>
-									<h5>convertMapsToTables: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>shouldSerialize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Whether or not to convert children Map elements to Lua tables. False
-										by default.</p>
+										<p>Whether or not to convert children Map &amp; Vector elements to Lua tables.
+										False by default.</p>
 									</div>
 								</li>
 								<li>
