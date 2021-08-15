@@ -83,6 +83,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#anyPlayerHasTrinket" class="tsd-kind-icon">any<wbr>Player<wbr>Has<wbr>Trinket</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#anyPlayerIs" class="tsd-kind-icon">any<wbr>Player<wbr>Is</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#getOpenTrinketSlot" class="tsd-kind-icon">get<wbr>Open<wbr>Trinket<wbr>Slot</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#getPlayerCloserThan" class="tsd-kind-icon">get<wbr>Player<wbr>Closer<wbr>Than</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#getPlayerIndex" class="tsd-kind-icon">get<wbr>Player<wbr>Index</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#getPlayerIndexVanilla" class="tsd-kind-icon">get<wbr>Player<wbr>Index<wbr>Vanilla</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_player.html#getPlayerNumAllHearts" class="tsd-kind-icon">get<wbr>Player<wbr>Num<wbr>All<wbr>Hearts</a></li>
@@ -102,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">Player<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>__playerIndexBrand<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L13">functions/player.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L13">functions/player.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -128,9 +129,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L15">functions/player.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L16">functions/player.ts:16</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Iterates over all players and checks if any player is close enough to the specified position.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -154,7 +160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L28">functions/player.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L29">functions/player.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L40">functions/player.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L41">functions/player.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -200,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L50">functions/player.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L51">functions/player.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -223,7 +229,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L74">functions/player.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L75">functions/player.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,6 +256,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getPlayerCloserThan" class="tsd-anchor"></a>
+					<h3>get<wbr>Player<wbr>Closer<wbr>Than</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Player<wbr>Closer<wbr>Than<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector</span>, distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L100">functions/player.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Iterates over all players and checks if any are close enough to the specified position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">Vector</span></h5>
+								</li>
+								<li>
+									<h5>distance: <span class="tsd-signature-type">float</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EntityPlayer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<p>The first player found when iterating upwards from index 0.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="getPlayerIndex" class="tsd-anchor"></a>
 					<h3>get<wbr>Player<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -259,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L155">functions/player.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L174">functions/player.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L169">functions/player.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L188">functions/player.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -335,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L193">functions/player.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L212">functions/player.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -364,7 +402,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L101">functions/player.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L120">functions/player.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -397,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L205">functions/player.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L224">functions/player.ts:224</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/player.ts#L216">functions/player.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e926f21/src/functions/player.ts#L235">functions/player.ts:235</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -528,6 +566,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_player.html#getOpenTrinketSlot" class="tsd-kind-icon">get<wbr>Open<wbr>Trinket<wbr>Slot</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_player.html#getPlayerCloserThan" class="tsd-kind-icon">get<wbr>Player<wbr>Closer<wbr>Than</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_player.html#getPlayerIndex" class="tsd-kind-icon">get<wbr>Player<wbr>Index</a>
