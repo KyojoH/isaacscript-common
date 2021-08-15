@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onCathedral" class="tsd-kind-icon">on<wbr>Cathedral</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onChest" class="tsd-kind-icon">on<wbr>Chest</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onDarkRoom" class="tsd-kind-icon">on<wbr>Dark<wbr>Room</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onFinalFloor" class="tsd-kind-icon">on<wbr>Final<wbr>Floor</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onRepentanceStage" class="tsd-kind-icon">on<wbr>Repentance<wbr>Stage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_stage.html#onSheol" class="tsd-kind-icon">on<wbr>Sheol</a></li>
 							</ul>
@@ -94,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/be0c697/src/functions/stage.ts#L12">functions/stage.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/stage.ts#L1">functions/stage.ts:1</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -111,7 +112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/be0c697/src/functions/stage.ts#L21">functions/stage.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/stage.ts#L10">functions/stage.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -128,9 +129,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/be0c697/src/functions/stage.ts#L30">functions/stage.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/stage.ts#L19">functions/stage.ts:19</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="onFinalFloor" class="tsd-anchor"></a>
+					<h3>on<wbr>Final<wbr>Floor</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Final<wbr>Floor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/stage.ts#L36">functions/stage.ts:36</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether or not the player is on the &quot;final floor&quot; of the particular run. The final floor
+									is defined as one that prevents the player from entering the I AM ERROR room on.</p>
+								</div>
+								<p>For example, when using Undefined on The Chest, it has a 50% chance of teleporting the player to
+									the Secret Room and a 50% chance of teleporting the player to the Super Secret Room, because the
+								I AM ERROR room is never entered into the list of possibilities.</p>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -145,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/be0c697/src/functions/stage.ts#L1">functions/stage.ts:1</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/stage.ts#L49">functions/stage.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -162,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/be0c697/src/functions/stage.ts#L39">functions/stage.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/33e8c5d/src/functions/stage.ts#L60">functions/stage.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -249,6 +276,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_stage.html#onDarkRoom" class="tsd-kind-icon">on<wbr>Dark<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_stage.html#onFinalFloor" class="tsd-kind-icon">on<wbr>Final<wbr>Floor</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_stage.html#onRepentanceStage" class="tsd-kind-icon">on<wbr>Repentance<wbr>Stage</a>
