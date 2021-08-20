@@ -76,7 +76,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#getRepentanceDoor" class="tsd-kind-icon">get<wbr>Repentance<wbr>Door</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isDoorToDownpour" class="tsd-kind-icon">is<wbr>Door<wbr>ToDownpour</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isDoorToMausoleum" class="tsd-kind-icon">is<wbr>Door<wbr>ToMausoleum</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isDoorToMausoleumAscent" class="tsd-kind-icon">is<wbr>Door<wbr>ToMausoleum<wbr>Ascent</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isDoorToMines" class="tsd-kind-icon">is<wbr>Door<wbr>ToMines</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isDoorToMomsHeart" class="tsd-kind-icon">is<wbr>Door<wbr>ToMoms<wbr>Heart</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isHiddenSecretRoomDoor" class="tsd-kind-icon">is<wbr>Hidden<wbr>Secret<wbr>Room<wbr>Door</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isRepentanceDoor" class="tsd-kind-icon">is<wbr>Repentance<wbr>Door</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_doors.html#isSecretRoomDoor" class="tsd-kind-icon">is<wbr>Secret<wbr>Room<wbr>Door</a></li>
@@ -98,7 +100,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L4">functions/doors.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L4">functions/doors.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -115,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L19">functions/doors.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L19">functions/doors.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
@@ -132,9 +134,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L37">functions/doors.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L42">functions/doors.ts:42</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This refers to the Repentance door that spawns in a boss room after defeating the boss.
+										You have to spend one key to open it.
+									It has a sprite filename of &quot;gfx/grid/Door_Downpour.anm2&quot;.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -155,9 +164,46 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L47">functions/doors.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L57">functions/doors.ts:57</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This refers to the Repentance door that spawns in a boss room after defeating the boss.
+										You have to spend two hearts to open it.
+									It has a sprite filename of &quot;gfx/grid/Door_Mausoleum.anm2&quot;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>door: <span class="tsd-signature-type">GridEntityDoor</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isDoorToMausoleumAscent" class="tsd-anchor"></a>
+					<h3>is<wbr>Door<wbr>ToMausoleum<wbr>Ascent</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Door<wbr>ToMausoleum<wbr>Ascent<span class="tsd-signature-symbol">(</span>door<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L72">functions/doors.ts:72</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This refers to the &quot;strange door&quot; located on the first room of Depths 2.
+										You open it with either a Polaroid or a Negative.
+									It has a sprite filename of &quot;gfx/grid/Door_Mausoleum_Alt.anm2&quot;.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -178,9 +224,46 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L57">functions/doors.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L87">functions/doors.ts:87</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This refers to the Repentance door that spawns in a boss room after defeating the boss.
+										You have to spend two bombs to open it.
+									It has a sprite filename of &quot;gfx/grid/Door_Mines.anm2&quot;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>door: <span class="tsd-signature-type">GridEntityDoor</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isDoorToMomsHeart" class="tsd-anchor"></a>
+					<h3>is<wbr>Door<wbr>ToMoms<wbr>Heart</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Door<wbr>ToMoms<wbr>Heart<span class="tsd-signature-symbol">(</span>door<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GridEntityDoor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L102">functions/doors.ts:102</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This refers to the Repentance door that spawns after defeating Mom.
+										You open it with the completed knife.
+									It has a sprite filename of &quot;gfx/grid/Door_MomsHeart.anm2&quot;.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -201,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L30">functions/doors.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L30">functions/doors.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -224,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L67">functions/doors.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L112">functions/doors.ts:112</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -247,7 +330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L71">functions/doors.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L116">functions/doors.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -270,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e7d8e5a/src/functions/doors.ts#L78">functions/doors.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/d9bb8cf/src/functions/doors.ts#L123">functions/doors.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -365,7 +448,13 @@
 						<a href="functions_doors.html#isDoorToMausoleum" class="tsd-kind-icon">is<wbr>Door<wbr>ToMausoleum</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_doors.html#isDoorToMausoleumAscent" class="tsd-kind-icon">is<wbr>Door<wbr>ToMausoleum<wbr>Ascent</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_doors.html#isDoorToMines" class="tsd-kind-icon">is<wbr>Door<wbr>ToMines</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_doors.html#isDoorToMomsHeart" class="tsd-kind-icon">is<wbr>Door<wbr>ToMoms<wbr>Heart</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_doors.html#isHiddenSecretRoomDoor" class="tsd-kind-icon">is<wbr>Hidden<wbr>Secret<wbr>Room<wbr>Door</a>
