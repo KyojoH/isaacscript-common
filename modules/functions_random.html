@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_random.html#getRandom" class="tsd-kind-icon">get<wbr>Random</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_random.html#getRandomFloat" class="tsd-kind-icon">get<wbr>Random<wbr>Float</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_random.html#getRandomInt" class="tsd-kind-icon">get<wbr>Random<wbr>Int</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_random.html#initRNG" class="tsd-kind-icon">initRNG</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,7 +93,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/random.ts#L8">functions/random.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/random.ts#L8">functions/random.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -122,7 +123,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/random.ts#L24">functions/random.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/random.ts#L24">functions/random.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,7 +162,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/random.ts#L37">functions/random.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/random.ts#L37">functions/random.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -185,6 +186,44 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="initRNG" class="tsd-anchor"></a>
+					<h3>initRNG</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">initRNG<span class="tsd-signature-symbol">(</span>seed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RNG</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/random.ts#L57">functions/random.ts:57</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to initialize an RNG object.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">startSeed</span><span style="color: #000000"> = </span><span style="color: #795E26">Game</span><span style="color: #000000">():</span><span style="color: #795E26">GetSeeds</span><span style="color: #000000">():</span><span style="color: #795E26">GetStartSeed</span><span style="color: #000000">();</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">rng</span><span style="color: #000000"> = </span><span style="color: #795E26">initRNG</span><span style="color: #000000">(</span><span style="color: #001080">startSeed</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fiftyFiftyChance</span><span style="color: #000000"> = </span><span style="color: #001080">rng</span><span style="color: #000000">.</span><span style="color: #795E26">RandomInt</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) === </span><span style="color: #098658">0</span><span style="color: #000000">;</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>seed: <span class="tsd-signature-type">int</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The seed to initialize it with.
+											(If you aren&#39;t initializing it with a seed, then don&#39;t use this function and instead simply call
+										the <code>RNG()</code> constructor.)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RNG</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -271,6 +310,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_random.html#getRandomInt" class="tsd-kind-icon">get<wbr>Random<wbr>Int</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_random.html#initRNG" class="tsd-kind-icon">initRNG</a>
 					</li>
 				</ul>
 			</nav>

@@ -74,7 +74,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#ensureAllCases" class="tsd-kind-icon">ensure<wbr>All<wbr>Cases</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#initRNG" class="tsd-kind-icon">initRNG</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#isVector" class="tsd-kind-icon">is<wbr>Vector</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerp" class="tsd-kind-icon">lerp</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_util.html#lerpAngleDegrees" class="tsd-kind-icon">lerp<wbr>Angle<wbr>Degrees</a></li>
@@ -97,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L39">functions/util.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L38">functions/util.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L49">functions/util.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L48">functions/util.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -178,44 +177,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="initRNG" class="tsd-anchor"></a>
-					<h3>initRNG</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">initRNG<span class="tsd-signature-symbol">(</span>seed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RNG</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L75">functions/util.ts:75</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Helper function to initialize an RNG object.</p>
-								</div>
-								<p>Example:</p>
-								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">startSeed</span><span style="color: #000000"> = </span><span style="color: #795E26">Game</span><span style="color: #000000">():</span><span style="color: #795E26">GetSeeds</span><span style="color: #000000">():</span><span style="color: #795E26">GetStartSeed</span><span style="color: #000000">();</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">rng</span><span style="color: #000000"> = </span><span style="color: #795E26">initRNG</span><span style="color: #000000">(</span><span style="color: #001080">startSeed</span><span style="color: #000000">);</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fiftyFiftyChance</span><span style="color: #000000"> = </span><span style="color: #001080">rng</span><span style="color: #000000">.</span><span style="color: #795E26">RandomInt</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">) === </span><span style="color: #098658">0</span><span style="color: #000000">;</span>
-</code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>seed: <span class="tsd-signature-type">int</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The seed to initialize it with.
-											(If you aren&#39;t initializing it with a seed, then don&#39;t use this function and instead simply call
-										the <code>RNG()</code> constructor.)</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RNG</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isVector" class="tsd-anchor"></a>
 					<h3>is<wbr>Vector</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -225,7 +186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L84">functions/util.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L60">functions/util.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -248,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L99">functions/util.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L75">functions/util.ts:75</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -277,7 +238,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L103">functions/util.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L79">functions/util.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -306,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L116">functions/util.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L92">functions/util.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -330,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/functions/util.ts#L129">functions/util.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/6100ee8/src/functions/util.ts#L105">functions/util.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,9 +390,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#getEnumValues" class="tsd-kind-icon">get<wbr>Enum<wbr>Values</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_util.html#initRNG" class="tsd-kind-icon">initRNG</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_util.html#isVector" class="tsd-kind-icon">is<wbr>Vector</a>
