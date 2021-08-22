@@ -74,7 +74,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#changeRoom" class="tsd-kind-icon">change<wbr>Room</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#getCurrentDimension" class="tsd-kind-icon">get<wbr>Current<wbr>Dimension</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#getRoomData" class="tsd-kind-icon">get<wbr>Room<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#getRoomDataType" class="tsd-kind-icon">get<wbr>Room<wbr>Data<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#getRoomSubType" class="tsd-kind-icon">get<wbr>Room<wbr>Sub<wbr>Type</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#getRoomVariant" class="tsd-kind-icon">get<wbr>Room<wbr>Variant</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#in2x1Room" class="tsd-kind-icon">in2x1<wbr>Room</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_rooms.html#inAngelShop" class="tsd-kind-icon">in<wbr>Angel<wbr>Shop</a></li>
@@ -97,7 +101,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L6">functions/rooms.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L6">functions/rooms.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -127,10 +131,53 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L17">functions/rooms.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L17">functions/rooms.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Dimension</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getRoomData" class="tsd-anchor"></a>
+					<h3>get<wbr>Room<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RoomConfig</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L36">functions/rooms.ts:36</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RoomConfig</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getRoomDataType" class="tsd-anchor"></a>
+					<h3>get<wbr>Room<wbr>Data<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Data<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L53">functions/rooms.ts:53</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to get the type for the room from the XML/STB data. The room data type will
+										correspond to different things depending on what XML/STB file it draws from. For example, in the
+										&quot;00.special rooms.stb&quot; file, a room type of 2 corresponds to a shop, a room type of 3 corresponds
+									to an I AM ERROR room, and so on.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+							<p>The room data type. Returns -1 if the room data type was not found.</p>
 						</li>
 					</ul>
 				</section>
@@ -144,18 +191,69 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L42">functions/rooms.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L69">functions/rooms.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Helper function to get the room index of the current room. Use this instead of calling
 										<code>Game().GetLevel().GetCurrentRoomIndex()</code> directly to avoid bugs with big rooms.
-										(Big rooms can return the specific 1x1 quadrant that the player is in, which can break data
-									structures that use the room index as an index.)</p>
+										(Big rooms will return the specific 1x1 quadrant that the player entered the room at,
+									which can break data structures that use the room index as an index.)</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getRoomSubType" class="tsd-anchor"></a>
+					<h3>get<wbr>Room<wbr>Sub<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Sub<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L93">functions/rooms.ts:93</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to get the subtype for the room from the XML/STB data. The room subtype will
+										correspond to different things depending on what XML/STB file it draws from. For example, in the
+										&quot;00.special rooms.stb&quot; file, an Angel Room with a subtype of 0 will correspond to a normal Angel
+									Room and a subtype of 1 will correspond to an Angel Room shop for The Stairway.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+							<p>The room subtype. Returns -1 if the room subtype was not found.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getRoomVariant" class="tsd-anchor"></a>
+					<h3>get<wbr>Room<wbr>Variant</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Variant<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L110">functions/rooms.ts:110</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to get the variant for the current room from the XML/STB data. You can think of a
+										room variant as its identifier. For example, to go to Basement room #123, you would use a console
+									command of <code>goto d.123</code> while on the Basement.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
+							<p>The room variant. Returns -1 if the room variant was not found.</p>
 						</li>
 					</ul>
 				</section>
@@ -169,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L62">functions/rooms.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L124">functions/rooms.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -201,7 +299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L74">functions/rooms.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L136">functions/rooms.ts:136</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -218,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L85">functions/rooms.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L147">functions/rooms.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -235,7 +333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L104">functions/rooms.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L163">functions/rooms.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -259,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/ad5a3e7/src/functions/rooms.ts#L118">functions/rooms.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e23e312/src/functions/rooms.ts#L173">functions/rooms.ts:173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -348,7 +446,19 @@
 						<a href="functions_rooms.html#getCurrentDimension" class="tsd-kind-icon">get<wbr>Current<wbr>Dimension</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_rooms.html#getRoomData" class="tsd-kind-icon">get<wbr>Room<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_rooms.html#getRoomDataType" class="tsd-kind-icon">get<wbr>Room<wbr>Data<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_rooms.html#getRoomIndex" class="tsd-kind-icon">get<wbr>Room<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_rooms.html#getRoomSubType" class="tsd-kind-icon">get<wbr>Room<wbr>Sub<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_rooms.html#getRoomVariant" class="tsd-kind-icon">get<wbr>Room<wbr>Variant</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_rooms.html#gridToPos" class="tsd-kind-icon">grid<wbr>ToPos</a>
