@@ -84,13 +84,13 @@
 					<a name="upgradeMod-1" class="tsd-anchor"></a>
 					<h3>upgrade<wbr>Mod</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">upgrade<wbr>Mod<span class="tsd-signature-symbol">(</span>mod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Mod</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ModUpgraded</span></li>
+						<li class="tsd-signature tsd-kind-icon">upgrade<wbr>Mod<span class="tsd-signature-symbol">(</span>mod<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Mod</span>, verbose<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ModUpgraded</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/15d7e4a/src/upgradeMod.ts#L35">upgradeMod.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/b930269/src/upgradeMod.ts#L39">upgradeMod.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -114,9 +114,20 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>mod: <span class="tsd-signature-type">Mod</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The mod object returned by the <code>RegisterMod()</code> function.</p>
+									</div>
+								</li>
+								<li>
+									<h5>verbose: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Enables verbose logging for the purposes of crash troubleshooting.
+										Defaults to false.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ModUpgraded</span></h4>
+							<p>The upgraded mod object.</p>
 						</li>
 					</ul>
 				</section>
