@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions/deepCopy | isaacscript-common</title>
+	<title>functions/revive | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="functions_deepCopy.html">functions/deepCopy</a>
+					<a href="functions_revive.html">functions/revive</a>
 				</li>
 			</ul>
-			<h1>Module functions/deepCopy</h1>
+			<h1>Module functions/revive</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_deepCopy.html#addTraversalDescription" class="tsd-kind-icon">add<wbr>Traversal<wbr>Description</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_deepCopy.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_revive.html#willMysteriousPaperRevive" class="tsd-kind-icon">will<wbr>Mysterious<wbr>Paper<wbr>Revive</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_revive.html#willPlayerRevive" class="tsd-kind-icon">will<wbr>Player<wbr>Revive</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,80 +82,63 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="addTraversalDescription" class="tsd-anchor"></a>
-					<h3>add<wbr>Traversal<wbr>Description</h3>
+					<a name="willMysteriousPaperRevive" class="tsd-anchor"></a>
+					<h3>will<wbr>Mysterious<wbr>Paper<wbr>Revive</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Traversal<wbr>Description<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyNotNil</span>, traversalDescription<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">will<wbr>Mysterious<wbr>Paper<wbr>Revive<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5eaa9a6/src/functions/deepCopy.ts#L186">functions/deepCopy.ts:186</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">AnyNotNil</span></h5>
-								</li>
-								<li>
-									<h5>traversalDescription: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="deepCopy" class="tsd-anchor"></a>
-					<h3>deep<wbr>Copy</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span>, shouldSerialize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5eaa9a6/src/functions/deepCopy.ts#L24">functions/deepCopy.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5eaa9a6/src/functions/revive.ts#L140">functions/revive.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>deepCopy returns a new Lua table or a TypeScriptToLua Map that is identical to the provided one.
-									It will recursively copy all of the values so that none of the nested references remain.</p>
+									<p>Assuming that we are on the frame of fatal damage, this function returns whether or not
+										Mysterious Paper would rotate to Missing Poster on the frame that the &quot;Game Over&quot; screen would
+									appear (which would subsequently save the player from fatal damage).</p>
 								</div>
-								<p>It will refuse to copy tables that have metatables, since that indicates that it the table is a
-								special object of some kind and cannot be copied in a generically safe way.</p>
-								<p>There are two exceptions, which the function has explicit logic to support:</p>
-								<ol>
-									<li>TypeScriptToLua maps</li>
-									<li>Vectors</li>
-								</ol>
+								<p>Mysterious Paper rotates between the 4 items on every frame, in order. The formula for whether
+								Mysterious Paper be Missing Power is: <code>gameFrameCount % 4 === 3</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>oldObject: <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The Lua table or TypeScriptToLua Map to copy.</p>
-									</div>
-								</li>
-								<li>
-									<h5>shouldSerialize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Whether or not to convert children Map &amp; Vector elements to Lua tables.
-										False by default. Set to true when preparing data to be encoded as JSON and saved to disk.</p>
-									</div>
-								</li>
-								<li>
-									<h5>traversalDescription: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Used to track the current key that we are operating on.</p>
-									</div>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="willPlayerRevive" class="tsd-anchor"></a>
+					<h3>will<wbr>Player<wbr>Revive</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">will<wbr>Player<wbr>Revive<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5eaa9a6/src/functions/revive.ts#L16">functions/revive.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The <code>EntityPlayer.WillPlayerRevive()</code> function does not properly account for Mysterious Paper,
+									so use this helper function instead for more robust revival detection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -173,7 +156,7 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_array.html">functions/array</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="functions_deepCopy.html">functions/deep<wbr>Copy</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -209,7 +192,7 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_random.html">functions/random</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="functions_revive.html">functions/revive</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -241,10 +224,10 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_deepCopy.html#addTraversalDescription" class="tsd-kind-icon">add<wbr>Traversal<wbr>Description</a>
+						<a href="functions_revive.html#willMysteriousPaperRevive" class="tsd-kind-icon">will<wbr>Mysterious<wbr>Paper<wbr>Revive</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_deepCopy.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a>
+						<a href="functions_revive.html#willPlayerRevive" class="tsd-kind-icon">will<wbr>Player<wbr>Revive</a>
 					</li>
 				</ul>
 			</nav>
