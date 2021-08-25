@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions/items | isaacscript-common</title>
+	<title>functions/trinkets | isaacscript-common</title>
 	<meta name="description" content="Documentation for isaacscript-common">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">isaacscript-common</a>
 				</li>
 				<li>
-					<a href="functions_items.html">functions/items</a>
+					<a href="functions_trinkets.html">functions/trinkets</a>
 				</li>
 			</ul>
-			<h1>Module functions/items</h1>
+			<h1>Module functions/trinkets</h1>
 		</div>
 	</div>
 </header>
@@ -70,12 +70,16 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/functions_trinkets.TrinketSituation.html" class="tsd-kind-icon">Trinket<wbr>Situation</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#collectibleHasTag" class="tsd-kind-icon">collectible<wbr>Has<wbr>Tag</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#getItemName" class="tsd-kind-icon">get<wbr>Item<wbr>Name</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#getMaxCollectibleID" class="tsd-kind-icon">get<wbr>Max<wbr>CollectibleID</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#isQuestItem" class="tsd-kind-icon">is<wbr>Quest<wbr>Item</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_trinkets.html#giveTrinketsBack" class="tsd-kind-icon">give<wbr>Trinkets<wbr>Back</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_trinkets.html#temporarilyRemoveTrinkets" class="tsd-kind-icon">temporarily<wbr>Remove<wbr>Trinkets</a></li>
 							</ul>
 						</section>
 					</div>
@@ -84,103 +88,70 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="collectibleHasTag" class="tsd-anchor"></a>
-					<h3>collectible<wbr>Has<wbr>Tag</h3>
+					<a name="giveTrinketsBack" class="tsd-anchor"></a>
+					<h3>give<wbr>Trinkets<wbr>Back</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">collectible<wbr>Has<wbr>Tag<span class="tsd-signature-symbol">(</span>collectibleType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">int</span>, tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ItemConfigTag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">give<wbr>Trinkets<wbr>Back<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span>, trinketSituation<span class="tsd-signature-symbol">: </span><a href="../interfaces/functions_trinkets.TrinketSituation.html" class="tsd-signature-type" data-tsd-kind="Interface">TrinketSituation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/c180da1/src/functions/items.ts#L1">functions/items.ts:1</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>collectibleType: <span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">int</span></h5>
-								</li>
-								<li>
-									<h5>tag: <span class="tsd-signature-type">ItemConfigTag</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getItemName" class="tsd-anchor"></a>
-					<h3>get<wbr>Item<wbr>Name</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>Name<span class="tsd-signature-symbol">(</span>collectibleOrTrinketType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, trinket<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/c180da1/src/functions/items.ts#L24">functions/items.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/c180da1/src/functions/trinkets.ts#L60">functions/trinkets.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>This is a helper function to get an item name from a CollectibleType or a TrinketType.</p>
+									<p>Helper function to restore the player&#39;s trinkets back to the way they were before the
+										<code>temporarilyRemoveTrinket</code> function was used. It will re-smelt any smelted trinkets that were
+									removed.</p>
 								</div>
-								<p>Example:</p>
-								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">item</span><span style="color: #000000"> = </span><span style="color: #001080">CollectibleType</span><span style="color: #000000">.</span><span style="color: #0070C1">COLLECTIBLE_SAD_ONION</span><span style="color: #000000">;</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">itemName</span><span style="color: #000000"> = </span><span style="color: #795E26">getItemName</span><span style="color: #000000">(</span><span style="color: #001080">item</span><span style="color: #000000">); </span><span style="color: #008000">// itemName is now &quot;Sad Onion&quot;</span>
-</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>collectibleOrTrinketType: <span class="tsd-signature-type">int</span></h5>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
 								</li>
 								<li>
-									<h5>trinket: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>trinketSituation: <a href="../interfaces/functions_trinkets.TrinketSituation.html" class="tsd-signature-type" data-tsd-kind="Interface">TrinketSituation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getMaxCollectibleID" class="tsd-anchor"></a>
-					<h3>get<wbr>Max<wbr>CollectibleID</h3>
+					<a name="temporarilyRemoveTrinkets" class="tsd-anchor"></a>
+					<h3>temporarily<wbr>Remove<wbr>Trinkets</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Max<wbr>CollectibleID<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+						<li class="tsd-signature tsd-kind-icon">temporarily<wbr>Remove<wbr>Trinkets<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span>, trinketType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TrinketType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/functions_trinkets.TrinketSituation.html" class="tsd-signature-type" data-tsd-kind="Interface">TrinketSituation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/c180da1/src/functions/items.ts#L46">functions/items.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/c180da1/src/functions/trinkets.ts#L18">functions/trinkets.ts:18</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="isQuestItem" class="tsd-anchor"></a>
-					<h3>is<wbr>Quest<wbr>Item</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Quest<wbr>Item<span class="tsd-signature-symbol">(</span>collectibleType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/c180da1/src/functions/items.ts#L51">functions/items.ts:51</a></li>
-								</ul>
-							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to temporarily remove a trinket from the player. Use this in combination with the
+										<code>giveTrinketBack</code> function to take away and give back a trinket on the same frame. This function
+										correctly handles multiple trinket slots and ensures that all copies of the trinket are removed,
+									including smelted trinkets.</p>
+								</div>
+								<p>Note that for simplicity, this function assumes that all smelted trinkets are non-golden.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>collectibleType: <span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">int</span></h5>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
+								</li>
+								<li>
+									<h5>trinketType: <span class="tsd-signature-type">TrinketType</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/functions_trinkets.TrinketSituation.html" class="tsd-signature-type" data-tsd-kind="Interface">TrinketSituation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -216,7 +187,7 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_input.html">functions/input</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="functions_items.html">functions/items</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -252,7 +223,7 @@
 					<li class=" tsd-kind-module">
 						<a href="functions_transformations.html">functions/transformations</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="functions_trinkets.html">functions/trinkets</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -268,17 +239,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_items.html#collectibleHasTag" class="tsd-kind-icon">collectible<wbr>Has<wbr>Tag</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/functions_trinkets.TrinketSituation.html" class="tsd-kind-icon">Trinket<wbr>Situation</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_items.html#getItemName" class="tsd-kind-icon">get<wbr>Item<wbr>Name</a>
+						<a href="functions_trinkets.html#giveTrinketsBack" class="tsd-kind-icon">give<wbr>Trinkets<wbr>Back</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_items.html#getMaxCollectibleID" class="tsd-kind-icon">get<wbr>Max<wbr>CollectibleID</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_items.html#isQuestItem" class="tsd-kind-icon">is<wbr>Quest<wbr>Item</a>
+						<a href="functions_trinkets.html#temporarilyRemoveTrinkets" class="tsd-kind-icon">temporarily<wbr>Remove<wbr>Trinkets</a>
 					</li>
 				</ul>
 			</nav>
