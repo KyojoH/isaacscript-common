@@ -91,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/deepCopy.ts#L186">functions/deepCopy.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/deepCopy.ts#L212">functions/deepCopy.ts:212</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -111,32 +111,34 @@
 					<a name="deepCopy" class="tsd-anchor"></a>
 					<h3>deep<wbr>Copy</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span>, shouldSerialize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span>, shouldSerialize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/deepCopy.ts#L24">functions/deepCopy.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/deepCopy.ts#L25">functions/deepCopy.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>deepCopy returns a new Lua table or a TypeScriptToLua Map that is identical to the provided one.
-									It will recursively copy all of the values so that none of the nested references remain.</p>
+									<p>deepCopy returns a new Lua table, a TypeScriptToLua Map, or a TypeScriptToLua Set that is
+										identical to the provided one. It will recursively copy all of the values so that none of the
+									nested references remain.</p>
 								</div>
 								<p>It will refuse to copy tables that have metatables, since that indicates that it the table is a
-								special object of some kind and cannot be copied in a generically safe way.</p>
-								<p>There are two exceptions, which the function has explicit logic to support:</p>
+									special object of some kind and cannot be copied in a generically safe way. There are three
+								exceptions, which the function has explicit logic to support:</p>
 								<ol>
-									<li>TypeScriptToLua maps</li>
+									<li>TypeScriptToLua Maps</li>
+									<li>TypeScriptToLua Sets</li>
 									<li>Vectors</li>
 								</ol>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>oldObject: <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>oldObject: <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The Lua table or TypeScriptToLua Map to copy.</p>
 									</div>
@@ -144,7 +146,7 @@
 								<li>
 									<h5>shouldSerialize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Whether or not to convert children Map &amp; Vector elements to Lua tables.
+										<p>Whether or not to convert children objects to Lua tables.
 										False by default. Set to true when preparing data to be encoded as JSON and saved to disk.</p>
 									</div>
 								</li>
@@ -155,7 +157,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>

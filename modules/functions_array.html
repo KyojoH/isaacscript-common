@@ -97,7 +97,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L18">functions/array.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L18">functions/array.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -126,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L4">functions/array.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L4">functions/array.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L51">functions/array.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L51">functions/array.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,7 +200,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L22">functions/array.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L22">functions/array.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -223,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L31">functions/array.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L31">functions/array.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -252,7 +252,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L40">functions/array.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L40">functions/array.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -284,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L67">functions/array.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L67">functions/array.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,16 +324,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/55ab3dd/src/functions/array.ts#L82">functions/array.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/5cdb0cb/src/functions/array.ts#L83">functions/array.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Since Lua uses tables for every non-primitive data structure,
-										it is non-trivial to determine if a particular table is being used as an array.
-										isArray returns true if the table contains all numerical indexes that are contiguous,
-									starting at 1.</p>
+									<p>Since Lua uses tables for every non-primitive data structure, it is non-trivial to determine if a
+									particular table is being used as an array. isArray returns true if:</p>
 								</div>
+								<ul>
+									<li>the table contains all numerical indexes that are contiguous, starting at 1</li>
+									<li>the table has no keys (i.e. an &quot;empty&quot; table)</li>
+								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
