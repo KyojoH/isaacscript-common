@@ -73,7 +73,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#anyEntityCloserThan" class="tsd-kind-icon">any<wbr>Entity<wbr>Closer<wbr>Than</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#getRoomNPCs" class="tsd-kind-icon">get<wbr>RoomNPCs</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#getBosses" class="tsd-kind-icon">get<wbr>Bosses</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#getNPCs" class="tsd-kind-icon">getNPCs</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#isGlitchedCollectible" class="tsd-kind-icon">is<wbr>Glitched<wbr>Collectible</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#removeAllEntities" class="tsd-kind-icon">remove<wbr>All<wbr>Entities</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_entity.html#removeAllMatchingEntities" class="tsd-kind-icon">remove<wbr>All<wbr>Matching<wbr>Entities</a></li>
@@ -94,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e517260/src/functions/entity.ts#L4">functions/entity.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e16afbf/src/functions/entity.ts#L4">functions/entity.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -114,16 +115,45 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getRoomNPCs" class="tsd-anchor"></a>
-					<h3>get<wbr>RoomNPCs</h3>
+					<a name="getBosses" class="tsd-anchor"></a>
+					<h3>get<wbr>Bosses</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>RoomNPCs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityNPC</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Bosses<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityNPC</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e517260/src/functions/entity.ts#L30">functions/entity.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e16afbf/src/functions/entity.ts#L30">functions/entity.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to get all the bosses in the room. Due to bugs with <code>Isaac.FindInRadius()</code>,
+									this function uses <code>Isaac.GetRoomEntities()</code>, which is more expensive but also more robust.</p>
+								</div>
+								<p>Example:</p>
+								<pre><code><span style="color: #008000">// Remove all of the bosses in the room</span>
+<span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">npc</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #795E26">getBosses</span><span style="color: #000000">()) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">npc</span><span style="color: #000000">.</span><span style="color: #795E26">Remove</span><span style="color: #000000">();</span>
+<span style="color: #000000">}</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EntityNPC</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getNPCs" class="tsd-anchor"></a>
+					<h3>getNPCs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">getNPCs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityNPC</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e16afbf/src/functions/entity.ts#L54">functions/entity.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,7 +163,7 @@
 								</div>
 								<p>Example:</p>
 								<pre><code><span style="color: #008000">// Remove all of the enemies in the room</span>
-<span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">npc</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #795E26">getRoomNPCs</span><span style="color: #000000">()) {</span>
+<span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">npc</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #795E26">getNPCs</span><span style="color: #000000">()) {</span>
 <span style="color: #000000">  </span><span style="color: #001080">npc</span><span style="color: #000000">.</span><span style="color: #795E26">Remove</span><span style="color: #000000">();</span>
 <span style="color: #000000">}</span>
 </code></pre>
@@ -152,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e517260/src/functions/entity.ts#L47">functions/entity.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e16afbf/src/functions/entity.ts#L71">functions/entity.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -182,7 +212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e517260/src/functions/entity.ts#L55">functions/entity.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e16afbf/src/functions/entity.ts#L79">functions/entity.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,7 +235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e517260/src/functions/entity.ts#L61">functions/entity.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/e16afbf/src/functions/entity.ts#L85">functions/entity.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -243,7 +273,10 @@
 						<a href="functions_entity.html#anyEntityCloserThan" class="tsd-kind-icon">any<wbr>Entity<wbr>Closer<wbr>Than</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_entity.html#getRoomNPCs" class="tsd-kind-icon">get<wbr>RoomNPCs</a>
+						<a href="functions_entity.html#getBosses" class="tsd-kind-icon">get<wbr>Bosses</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_entity.html#getNPCs" class="tsd-kind-icon">getNPCs</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_entity.html#isGlitchedCollectible" class="tsd-kind-icon">is<wbr>Glitched<wbr>Collectible</a>
