@@ -76,6 +76,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#getItemName" class="tsd-kind-icon">get<wbr>Item<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#getMaxCollectibleID" class="tsd-kind-icon">get<wbr>Max<wbr>CollectibleID</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#isQuestItem" class="tsd-kind-icon">is<wbr>Quest<wbr>Item</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_items.html#removeItemFromItemTracker" class="tsd-kind-icon">remove<wbr>Item<wbr>From<wbr>Item<wbr>Tracker</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,7 +94,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/389fb62/src/functions/items.ts#L1">functions/items.ts:1</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8632ead/src/functions/items.ts#L1">functions/items.ts:1</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -119,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/389fb62/src/functions/items.ts#L24">functions/items.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8632ead/src/functions/items.ts#L24">functions/items.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -154,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/389fb62/src/functions/items.ts#L46">functions/items.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8632ead/src/functions/items.ts#L46">functions/items.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
@@ -171,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/389fb62/src/functions/items.ts#L51">functions/items.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8632ead/src/functions/items.ts#L51">functions/items.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,6 +182,37 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="removeItemFromItemTracker" class="tsd-anchor"></a>
+					<h3>remove<wbr>Item<wbr>From<wbr>Item<wbr>Tracker</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Item<wbr>From<wbr>Item<wbr>Tracker<span class="tsd-signature-symbol">(</span>collectibleType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8632ead/src/functions/items.ts#L62">functions/items.ts:62</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Helper function to put a message in the log.txt file to let the Rebirth Item Tracker know that it
+									should remove an item.</p>
+								</div>
+								<p>The &quot;item tracker&quot; in this function does not refer to the in-game item tracker, but rather to the
+								Python program located at: <a href="https://github.com/Rchardon/RebirthItemTracker">https://github.com/Rchardon/RebirthItemTracker</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>collectibleType: <span class="tsd-signature-type">CollectibleType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">int</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -210,6 +242,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_items.html#isQuestItem" class="tsd-kind-icon">is<wbr>Quest<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_items.html#removeItemFromItemTracker" class="tsd-kind-icon">remove<wbr>Item<wbr>From<wbr>Item<wbr>Tracker</a>
 					</li>
 				</ul>
 			</nav>
