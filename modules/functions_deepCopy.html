@@ -70,10 +70,16 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-module"><a href="../enums/functions_deepCopy.SerializationType.html" class="tsd-kind-icon">Serialization<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_deepCopy.html#addTraversalDescription" class="tsd-kind-icon">add<wbr>Traversal<wbr>Description</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_deepCopy.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_deepCopy.html#deserializeVector" class="tsd-kind-icon">deserialize<wbr>Vector</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,42 +88,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="addTraversalDescription" class="tsd-anchor"></a>
-					<h3>add<wbr>Traversal<wbr>Description</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Traversal<wbr>Description<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AnyNotNil</span>, traversalDescription<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/3583889/src/functions/deepCopy.ts#L224">functions/deepCopy.ts:224</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">AnyNotNil</span></h5>
-								</li>
-								<li>
-									<h5>traversalDescription: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="deepCopy" class="tsd-anchor"></a>
 					<h3>deep<wbr>Copy</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span>, shouldSerialize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Copy<span class="tsd-signature-symbol">(</span>oldObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span>, serializationType<span class="tsd-signature-symbol">?: </span><a href="../enums/functions_deepCopy.SerializationType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SerializationType</a>, traversalDescription<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/3583889/src/functions/deepCopy.ts#L25">functions/deepCopy.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/7e60e66/src/functions/deepCopy.ts#L36">functions/deepCopy.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,10 +124,11 @@
 									</div>
 								</li>
 								<li>
-									<h5>shouldSerialize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>serializationType: <a href="../enums/functions_deepCopy.SerializationType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SerializationType</a><span class="tsd-signature-symbol"> = ...</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Whether or not to convert children objects to Lua tables.
-										False by default. Set to true when preparing data to be encoded as JSON and saved to disk.</p>
+										<p>Has 3 possible values. Can leave TypeScriptToLua objects as-is, or can
+											serialize objects to Lua tables, or can deserialize Lua tables to objects. No serialization by
+										default.</p>
 									</div>
 								</li>
 								<li>
@@ -158,6 +139,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AnyNotNil</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="deserializeVector" class="tsd-anchor"></a>
+					<h3>deserialize<wbr>Vector</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">deserialize<wbr>Vector<span class="tsd-signature-symbol">(</span>vectorTable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LuaTable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/7e60e66/src/functions/deepCopy.ts#L246">functions/deepCopy.ts:246</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vectorTable: <span class="tsd-signature-type">LuaTable</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -176,11 +180,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="functions_deepCopy.html#addTraversalDescription" class="tsd-kind-icon">add<wbr>Traversal<wbr>Description</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/functions_deepCopy.SerializationType.html" class="tsd-kind-icon">Serialization<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_deepCopy.html#deepCopy" class="tsd-kind-icon">deep<wbr>Copy</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_deepCopy.html#deserializeVector" class="tsd-kind-icon">deserialize<wbr>Vector</a>
 					</li>
 				</ul>
 			</nav>
@@ -195,6 +202,9 @@
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
