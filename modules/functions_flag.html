@@ -86,23 +86,29 @@
 					<a name="addFlag" class="tsd-anchor"></a>
 					<h3>add<wbr>Flag</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Flag<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Flag<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, <span class="tsd-signature-symbol">...</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/12061d6/src/functions/flag.ts#L15">functions/flag.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/744bf0c/src/functions/flag.ts#L23">functions/flag.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Helper function to add a bit flag to an existing set of bit flags.</p>
+									<p>Helper function to add a bit flag to an existing set of bit flags.
+									This is a variadic function, so pass as many flags as you want to add.</p>
 								</div>
-								<p>Example:</p>
+								<p>Example 1:</p>
 								<pre><code><span style="color: #008000">// Give the player spectral tears</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">player</span><span style="color: #000000"> = </span><span style="color: #001080">Isaac</span><span style="color: #000000">.</span><span style="color: #795E26">GetPlayer</span><span style="color: #000000">();</span>
 <span style="color: #001080">player</span><span style="color: #000000">.</span><span style="color: #001080">TearFlags</span><span style="color: #000000"> = </span><span style="color: #795E26">addFlag</span><span style="color: #000000">(</span><span style="color: #001080">player</span><span style="color: #000000">.</span><span style="color: #001080">TearFlags</span><span style="color: #000000">, </span><span style="color: #001080">TearFlags</span><span style="color: #000000">.</span><span style="color: #0070C1">TEAR_SPECTRAL</span><span style="color: #000000">);</span>
+</code></pre>
+								<p>Example 2:</p>
+								<pre><code><span style="color: #008000">// Give the player spectral and homing tears</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">player</span><span style="color: #000000"> = </span><span style="color: #001080">Isaac</span><span style="color: #000000">.</span><span style="color: #795E26">GetPlayer</span><span style="color: #000000">();</span>
+<span style="color: #001080">player</span><span style="color: #000000">.</span><span style="color: #001080">TearFlags</span><span style="color: #000000"> = </span><span style="color: #795E26">addFlag</span><span style="color: #000000">(</span><span style="color: #001080">player</span><span style="color: #000000">.</span><span style="color: #001080">TearFlags</span><span style="color: #000000">, </span><span style="color: #001080">TearFlags</span><span style="color: #000000">.</span><span style="color: #0070C1">TEAR_SPECTRAL</span><span style="color: #000000">, </span><span style="color: #001080">TearFlags</span><span style="color: #000000">.</span><span style="color: #0070C1">TEAR_HOMING</span><span style="color: #000000">);</span>
 </code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -114,9 +120,9 @@
 									</div>
 								</li>
 								<li>
-									<h5>flag: <span class="tsd-signature-type">int</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>flag: <span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The bit flag to add.</p>
+										<p>One or more bit flags to add, each as a separate argument.</p>
 									</div>
 								</li>
 							</ul>
@@ -129,19 +135,20 @@
 					<a name="hasFlag" class="tsd-anchor"></a>
 					<h3>has<wbr>Flag</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Flag<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Flag<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, <span class="tsd-signature-symbol">...</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/12061d6/src/functions/flag.ts#L34">functions/flag.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/744bf0c/src/functions/flag.ts#L47">functions/flag.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Helper function to check to see if a particular bit flag is set to true on an existing set of bit
-									flags.</p>
+									<p>Helper function to check to see if a particular bit flag is set to true.
+										This is a variadic function, so pass as many flags as you want to check for.
+									If passed multiple flags, it will only return true if all of the flags are set.</p>
 								</div>
 								<p>Example:</p>
 								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">player</span><span style="color: #000000"> = </span><span style="color: #001080">Isaac</span><span style="color: #000000">.</span><span style="color: #795E26">GetPlayer</span><span style="color: #000000">();</span>
@@ -159,9 +166,9 @@
 									</div>
 								</li>
 								<li>
-									<h5>flag: <span class="tsd-signature-type">int</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>flag: <span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The bit flag to check for.</p>
+										<p>One or more bit flags to check for, each as a separate argument.</p>
 									</div>
 								</li>
 							</ul>
@@ -173,18 +180,19 @@
 					<a name="removeFlag" class="tsd-anchor"></a>
 					<h3>remove<wbr>Flag</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Flag<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Flag<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span>, <span class="tsd-signature-symbol">...</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/12061d6/src/functions/flag.ts#L52">functions/flag.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/744bf0c/src/functions/flag.ts#L72">functions/flag.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Helper function to remove a bit flag from an existing set of bit flags.</p>
+									<p>Helper function to remove a bit flag from an existing set of bit flags.
+									This is a variadic function, so pass as many flags as you want to remove.</p>
 								</div>
 								<p>Example:</p>
 								<pre><code><span style="color: #008000">// Remove spectral tears from the player, if present</span>
@@ -201,9 +209,9 @@
 									</div>
 								</li>
 								<li>
-									<h5>flag: <span class="tsd-signature-type">int</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>flag: <span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The bit flag to remove.</p>
+										<p>One or more bit flags to remove, each as a separate argument.</p>
 									</div>
 								</li>
 							</ul>
