@@ -72,6 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#addTearsStat" class="tsd-kind-icon">add<wbr>Tears<wbr>Stat</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#getFireDelay" class="tsd-kind-icon">get<wbr>Fire<wbr>Delay</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_tears.html#getTearsStat" class="tsd-kind-icon">get<wbr>Tears<wbr>Stat</a></li>
 							</ul>
@@ -82,6 +83,38 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="addTearsStat" class="tsd-anchor"></a>
+					<h3>add<wbr>Tears<wbr>Stat</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Tears<wbr>Stat<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span>, tearsStat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8312d1e/src/functions/tears.ts#L5">functions/tears.ts:5</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the specified amount of tears stat into MaxFireDelay and adds it to the player. This
+									function should only be used inside the EvaluateCache callback.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
+								</li>
+								<li>
+									<h5>tearsStat: <span class="tsd-signature-type">float</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="getFireDelay" class="tsd-anchor"></a>
 					<h3>get<wbr>Fire<wbr>Delay</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -91,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/1ec7823/src/functions/tears.ts#L6">functions/tears.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8312d1e/src/functions/tears.ts#L15">functions/tears.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -121,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/1ec7823/src/functions/tears.ts#L15">functions/tears.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/8312d1e/src/functions/tears.ts#L24">functions/tears.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -156,6 +189,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_tears.html#addTearsStat" class="tsd-kind-icon">add<wbr>Tears<wbr>Stat</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_tears.html#getFireDelay" class="tsd-kind-icon">get<wbr>Fire<wbr>Delay</a>
 					</li>
