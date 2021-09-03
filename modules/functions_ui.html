@@ -78,6 +78,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_ui.html#getScreenCenter" class="tsd-kind-icon">get<wbr>Screen<wbr>Center</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_ui.html#getScreenTopLeft" class="tsd-kind-icon">get<wbr>Screen<wbr>Top<wbr>Left</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_ui.html#getScreenTopRight" class="tsd-kind-icon">get<wbr>Screen<wbr>Top<wbr>Right</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions_ui.html#getVisibleHearts" class="tsd-kind-icon">get<wbr>Visible<wbr>Hearts</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4da9d46/src/functions/ui.ts#L17">functions/ui.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L17">functions/ui.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -123,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4da9d46/src/functions/ui.ts#L60">functions/ui.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L79">functions/ui.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
@@ -140,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4da9d46/src/functions/ui.ts#L65">functions/ui.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L84">functions/ui.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
@@ -157,7 +158,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4da9d46/src/functions/ui.ts#L80">functions/ui.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L99">functions/ui.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
@@ -174,7 +175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4da9d46/src/functions/ui.ts#L51">functions/ui.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L70">functions/ui.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
@@ -191,10 +192,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/4da9d46/src/functions/ui.ts#L55">functions/ui.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L74">functions/ui.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vector</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getVisibleHearts" class="tsd-anchor"></a>
+					<h3>get<wbr>Visible<wbr>Hearts</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Hearts<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EntityPlayer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/IsaacScript/isaacscript-common/blob/063c719/src/functions/ui.ts#L56">functions/ui.ts:56</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get how many hearts are currently being shown on the hearts UI.</p>
+								</div>
+								<p>This function is originally from piber20 Helper.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>player: <span class="tsd-signature-type">EntityPlayer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">int</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -230,6 +260,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="functions_ui.html#getScreenTopRight" class="tsd-kind-icon">get<wbr>Screen<wbr>Top<wbr>Right</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="functions_ui.html#getVisibleHearts" class="tsd-kind-icon">get<wbr>Visible<wbr>Hearts</a>
 					</li>
 				</ul>
 			</nav>
